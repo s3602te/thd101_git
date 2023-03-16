@@ -1,0 +1,63 @@
+/* ================header================ */
+
+header {}
+
+/* 標題 */
+
+h1 {
+    text-align: center;
+    width: 500px;
+    font-size: 50px;
+    margin: 0px auto;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+h2 {
+    text-align: center;
+    width: 500px;
+    font-size: 32px;
+    margin: 0px auto;
+}
+
+main {
+    /* border: 5px solid blue; */
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0 200px;
+    text-align: center;
+}
+
+/* 選單title */
+label{
+    /* border: 2px dashed green; */
+    /* font-weight: bold; */
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    text-align: left;
+    font-size: 22px;
+}
+
+/* 日期 */
+input{
+    font-size: 24px;
+}
+select{
+    font-size: 24px;
+    margin: 10px;
+}
+option{
+    font-size: 16px;
+}
+
+
+.select{
+    /* border: 5px solid brown; */
+    margin: 50px;
+}
+
+
+
+
+

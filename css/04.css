@@ -1,0 +1,127 @@
+.out {
+    width: 100%;
+}
+
+
+/* ================header================ */
+
+header {}
+
+header .logo {
+    /* border: 3px solid red; */
+    width: 450px;
+    display: block;
+    margin: 50px auto 0;
+
+}
+
+header h1 {
+    text-align: center;
+    width: 500px;
+    font-size: 50px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+/* ================wrapper================ */
+
+
+
+
+
+
+/* ================main================ */
+
+
+
+h1 {
+    margin: 200px auto 50px;
+    width: 900px;
+    text-align: center;
+    font-size: 32px;
+    /* border: 5px solid red; */
+}
+
+
+/* ==================store================== */
+.store {
+    /* border: 5px solid red; */
+    padding-bottom: 100px;
+}
+
+.store ul {
+
+    /* border: 5px solid blue; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.store li {
+    display: flex;
+    /* border: 5px solid green; */
+    justify-content: space-evenly;
+    position: relative;
+    padding: 50px;
+    margin: 50px;
+}
+
+.store .text{
+    /* border: 2px solid brown; */
+    padding-top: 2%;
+}
+.store h2 {
+    /* border: 2px solid rgb(172, 194, 48); */
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+.store p {
+    font-family: '微軟正黑體';
+    /* border: 2px solid rgb(255, 0, 191); */
+    line-height: 2;
+    letter-spacing: 5px;
+}
+
+.store img {
+    /* border: 2px solid rgb(18, 217, 252); */
+    width: 400px;
+}
+
+p a {
+    /* border: 5px solid red; */
+
+    /* 按鈕 */
+    background-color: #D4A373;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    display: block;
+    line-height: 2;
+    color: #CCD5AE;
+
+    /* 位置 */
+    position: absolute;
+    right: 53%;
+    top: 80%;
+}
+
+p a:hover{
+    /* background-color: #FAEDCD; */
+    color: #999;
+    background-color: white;
+}
+
+/* ==================store================== */

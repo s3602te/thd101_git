@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 字元編碼 UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 搜尋關鍵字 -->
+    <meta name="keyowrds" content="炸蝦,個人專題">
+    <!-- 描述網頁 -->
+    <meta name="description" content="這是用於學習設計網頁的個人專題炸蝦店實際並不存該店鋪">
+    <!-- RWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>訂位</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/07.css">
+    <link rel="stylesheet" href="css/nav_side_footer.css">
+    <!-- 字體 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+TC:wght@100&family=Yuji+Boku&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+
+
+    <div class="wrapper">
+
+
+        <header>
+            <h1>預約</h1>
+        </header>
+
+
+
+        <h2>選擇訂位時段</h2>
+
+        <main>
+
+            <div class="select">
+                <label for="date">選擇日期：</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+
+
+
+            <div class="select">
+                <label for="time">用餐時段</label>
+                <select name="time" id="time">
+                    <option value="null">--</option>
+                    <option value="11:00-13:00">11:00-13:00</option>
+                    <option value="17:00-19:00">17:00-19:00</option>
+                    <option value="19:00-21:00">19:00-21:00</option>
+                </select>
+            </div>
+
+
+            <div class="select">
+                <label for="people">用餐人數</label>
+                <select name="people_ad" id="people_ad">
+                    <option value="null">成人</option>
+                    <option value="num1">一位</option>
+                    <option value="num2">二位</option>
+                    <option value="num3">三位</option>
+                    <option value="num4">四位</option>
+                    <option value="num5+">五位以上</option>
+                </select>
+                <select name="people_chi" id="people_chi">
+                    <option value="null">兒童</option>
+                    <option value="num1">一位</option>
+                    <option value="num2">二位</option>
+                </select>
+            </div>
+
+
+
+            <div class="select">
+                <label for="restaurant">用餐餐廳</label>
+                <select name="restaurant" id="restaurant">
+                    <option value="null">--</option>
+                    <option value="store1">台北市士林旗艦店</option>
+                    <option value="store2">台北市京站分店</option>
+                    <option value="store3">新北市三重分店</option>
+                    <option value="store4">台中第七市場分店</option>
+                </select>
+            </div>
+        </main>
+
+    </div>
+
+
+
+
+
+    <!-- 右側 -->
+
+    <div class="side_menu">
+        <ul>
+            <li><a href="01.html">首頁</a></li>
+            <li><a href="02.html">最新消息</a></li>
+            <li><a href="03.html">菜單</a></li>
+            <li><a href="04.html">店鋪資訊</a></li>
+            <li><a href="05.html">關於我們</a></li>
+            <li><a href="06.html">聯絡我們</a></li>
+        </ul>
+    </div>
+
+
+    <!-- 右下側 -->
+
+    <div class="bottom_side_menu">
+        <ul>
+            <li><a href="07.html">立即<br>訂位</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- 底 -->
+    <footer>
+
+        <div class="logo">
+            <img src="img/logo/logo.png" alt="">
+        </div>
+
+        <ul>
+            <il><a href=""><i class="fa-brands fa-facebook"></i></a></il>
+            <il><a href=""><i class="fa-brands fa-square-instagram"></i></a></il>
+            <il><a href=""><i class="fa-brands fa-twitter"></i></a></il>
+            <il><a href=""><i class="fa-brands fa-youtube"></i></a></il>
+        </ul>
+
+        <p>
+            <time>
+                電話：02-2882-0369 ｜ 週一~週五08:00～21:00 ｜ 週六11:00～20:30 <br> Copyright © 海老屋ebiya Co.,LTD All
+                Rights
+                Reserved
+            </time>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+/* ================header================ */
+
+header {}
+
+/* 標題 */
+
+h1 {
+    text-align: center;
+    width: 500px;
+    font-size: 50px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+.top {
+    margin: 50px 0;
+}
+
+
+/* ================wrapper================ */
+
+
+/* 圖 */
+.media img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    /* width: 1920px; */
+    max-width: 100vw;
+
+}
+
+/* 遮罩 */
+.white {
+    margin: 0 auto;
+    width: 70%;
+    height: 39vw;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.322);
+    z-index: 0;
+    display: block;
+    margin-left: 285px;
+}
+
+
+/* ================main================ */
+
+/* 副標 */
+.title h1 {
+    margin: 200px auto 50px;
+    width: 900px;
+    text-align: center;
+    font-size: 68px;
+    /* border: 5px solid red; */
+}
+
+/* 菜單 */
+.container ul {
+    margin: 0 auto;
+    width: 1540px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+.container ul li {
+    /* outline: 5px solid blueviolet; */
+}
+
+.container ul li img {
+    /* outline:  5px solid blue; */
+    width: 500px;
+    flex-basis: 40%;
+    margin: 80px;
+    margin-bottom: 20px;
+}
+
+.container ul li a {
+    /* outline: 5px solid green; */
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+
+
+/* 頁數 */
+.but {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 30px;
+    background-color: #D4A373;
+    font-weight: bold;
+    transition: background-color .5s ease;
+}
+
+button:hover {
+    background-color: white;
+}
+
+
+.but a {
+    line-height: 1.3;
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* 瀏覽過菜單 */
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+    margin: 100px auto 20px;
+}
+
+.past {
+    width: 80%;
+    margin: 0 auto;
+    /* border: 5px solid red; */
+    display: flex;
+    padding: 100px 0 150px;
+}
+
+.past ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.past li {
+    /* border: 5px solid blue; */
+    margin: 0 50px;
+    width: 150px;
+    position: relative;
+}
+
+.past li:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.past img {
+    width: 150px;
+}
