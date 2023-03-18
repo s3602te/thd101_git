@@ -56,7 +56,7 @@ h6 {
 }
 
 .label li {
-    border: 5px dashed pink;
+    /* border: 5px dashed pink; */
     width: 65%;
     margin: 0 auto 20px;
     padding: 20px;
@@ -101,6 +101,13 @@ select{
 
     font-size: 19.2px;
 }
+
+
+input .name{
+}
+
+
+
 
 option{
     

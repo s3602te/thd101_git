@@ -57,7 +57,79 @@ option{
     margin: 50px;
 }
 
+.select #people_ad{
+    /* border: 5px solid sandybrown; */
+    width: 90px;
+}
+
+.select #people_chi{
+    /* border: 5px solid sandybrown; */
+    width: 90px;
+}
+
+.select #time{
+    /* border: 50px solid sandybrown; */
+    width: 200px;
+}
+
+.select #restaurant{
+    width: 200px;
+}
 
 
+
+
+.con{
+    /* border: 2px solid dodgerblue; */
+    
+}
+
+.con li{
+    /* border: 2px solid sandybrown; */
+    width: 500px;
+    margin: 0 auto 50px;
+}
+
+.con p{
+    /* border: 5px solid red; */
+    width: 60px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: normal;
+
+
+
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    text-align: left;
+    font-size: 22px;
+}
+
+.con input{
+    /* border: 20px solid yellow; */
+    width: 200px;
+    
+    font-size: 24px;
+}
+
+
+
+button{
+    margin: 50px auto;
+    font-size: 22px;
+    background-color: #D4A373;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #d6d6d6;
+}
+
+
+button a{
+    text-decoration: none;
+    color: white;
+}
 
 
