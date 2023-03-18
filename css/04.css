@@ -96,6 +96,7 @@ h1 {
 .store img {
     /* border: 2px solid rgb(18, 217, 252); */
     width: 400px;
+    height: 250px;
 }
 
 p a {
@@ -110,7 +111,7 @@ p a {
     border-radius: 15px;
     display: block;
     line-height: 2;
-    color: #CCD5AE;
+    color: white;
 
     /* 位置 */
     position: absolute;
@@ -120,8 +121,7 @@ p a {
 
 p a:hover{
     /* background-color: #FAEDCD; */
-    color: #999;
-    background-color: white;
+    background-color: #d6d6d6;
 }
 
 /* ==================store================== */

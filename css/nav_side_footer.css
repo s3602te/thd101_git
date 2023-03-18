@@ -52,6 +52,7 @@ body {
 .side_menu a {
     display: block;
     text-decoration: none;
+    text-align: center;
     color: white;
     padding: 10px;
     border-radius: 10px;

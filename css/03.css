@@ -80,6 +80,14 @@ h1 {
     /* outline: 5px solid green; */
 }
 
+.container p{
+    font-size: 24px;
+    background-color: #D4A373;
+    width: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
 h2 {
     font-size: 28px;
     text-align: center;
