@@ -29,7 +29,12 @@ header h1 {
 }
 
 .container ul li img{
-  width: 100%;
+  
+  /* width: 100%; */
+  width: 400px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -53,7 +58,7 @@ header h1 {
   margin: 0 auto;
   border-radius: 30px;
   line-height: 2;
-  color: #CCD5AE;
+  color: white;
   margin-top: 20px;
   text-decoration: none;
   font-weight: bold;
@@ -61,6 +66,9 @@ header h1 {
 }
 
 
+.button:hover{
+  background-color: #d6d6d6;
+}
 
 
 
