@@ -1,19 +1,67 @@
 /* header */
 
 
-header {}
 
-header h1 {
-  text-align: center;
-  width: 500px;
-  font-size: 50px;
-  margin: 0px auto;
-  padding-top: 50px;
+
+
+
+/* LOGO */
+.logo_top {
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 30%;
+  /* padding: 200px auto; */
+  margin: 0 auto;
+  /* border: 5px solid red; */
+  background-color: rgba(255, 255, 255, 0.384);
+  height: auto;
+  transform: translate(-50%, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.logo {
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+  height: 200px;
+}
+
+.logo a {
+  width: 100%;
+  height: 200px;
+  display: block;
+  /* outline: 1px solid tomato; */
+
+}
+
+/* LOGO下滑縮小 */
+.shrink {
+  width: 10%;
+  top: 10px;
+  left: 90%;
+  transform: translate(0, 0);
+  /* justify-self: start; */
 }
 
 
 
 
+
+
+header {
+}
+
+header h1 {
+  text-align: center;
+  width: 500px;
+  font-size: 7rem;
+  margin: 0px auto;
+  padding-top: 200px;
+}
 
 
 
@@ -25,8 +73,8 @@ header h1 {
 
 
 /* ======================================== */
-main p{
-  opacity: 0 ;
+main p {
+  opacity: 0;
   color: white;
   padding: 40px;
   font-size: 28px;
@@ -34,7 +82,7 @@ main p{
 
 
 
-li:hover p{
+li:hover p {
 
   /* 直行字 */
 
@@ -44,11 +92,11 @@ li:hover p{
   opacity: 1;
 
   background-color: rgba(0, 0, 0, 0.267);
-  
+
 }
 
 
-li .item2:hover p{
+li .item2:hover p {
   padding: 500px;
 }
 
@@ -79,15 +127,15 @@ main li {
   filter: saturate(0.4)
 }
 
-main .item2  {
+main .item2 {
   background-image: url("../img/08.jpg");
   flex-grow: 1;
   filter: saturate(0.4);
-  
-  
+
+
 }
 
-main .item2 p{
+main .item2 p {
   position: absolute;
   right: 0;
   color: black;
@@ -104,7 +152,6 @@ main .item2 p{
 li:hover {
   flex-grow: 5;
   filter: saturate(1)
-
 }
 
 
@@ -114,11 +161,9 @@ li:hover {
 
 
 
-.section{
+.section {}
 
-}
-
-.section h2{
+.section h2 {
   font-size: 38px;
   font-weight: bold;
   /* border: 2px solid red; */
@@ -128,9 +173,10 @@ li:hover {
   text-align: center;
 }
 
-.section p{
+.section p {
   /* border: 5px solid blueviolet; */
-  font-family: '微軟正黑體';
+  font-family: '標楷體';
+  font-weight: bold;
   font-size: 24px;
   line-height: 1.6;
   width: 50%;
@@ -138,14 +184,3 @@ li:hover {
   padding-top: 50px;
   padding-bottom: 150px;
 }
-
-
-
-
-
-
-
-
-
-
-

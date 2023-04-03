@@ -1,18 +1,201 @@
 /* header */
 
 
-header{
+
+
+/* LOGO */
+.logo_top {
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 30%;
+  /* padding-bottom: 200px auto; */
+  margin: 0 auto;
+  /* border: 5px solid red; */
+  background-color: rgba(255, 255, 255, 0.384);
+  height: auto;
+  transform: translate(-50%, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.logo {
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+  height: 200px;
+}
+
+.logo a {
+  width: 100%;
+  height: 200px;
+  display: block;
+  /* outline: 1px solid tomato; */
 
 }
+
+/* LOGO下滑縮小 */
+.shrink {
+  width: 10%;
+  top: 10px;
+  left: 90%;
+  transform: translate(0, 0);
+  /* justify-self: start; */
+}
+
+
+
+
+
+
+
 
 header h1 {
   text-align: center;
   width: 500px;
-  font-size: 50px;
+  font-size: 7rem;
   margin: 0px auto;
-  padding-top: 50px;
+  padding-top: 200px;
+
 }
 
+
+
+/* 內容 */
+
+.container ul {
+  font-family: "微軟正黑體";
+  /* outline: 5px solid red; */
+  display: flex;
+  width: 900px;
+  margin: 150px auto 0;
+  /* margin-top: 150px; */
+  padding-bottom: 150px;
+  flex-wrap: wrap;
+}
+
+.container li {
+  /* outline: 5px solid green; */
+  flex-basis: 400px;
+  margin: 0 25px 50px;
+  display: block;
+
+  cursor: pointer;
+
+
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #D4A373;
+}
+
+.container a {
+  display: block;
+  margin: 0 auto;
+  /* outline: 5px solid yellow; */
+}
+
+.container p {
+  font-family: '微軟正黑體';
+  /* outline: 5px solid pink; */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: bold;
+  display: block;
+  padding-top: 20px;
+  line-height: 2;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.container img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+
+
+}
+
+span {
+  background-color: #D4A373;
+  padding: 0 20px;
+  color: white;
+}
+
+
+.container a {
+  color: #D4A373;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: #D4A373;
+}
+
+a:visited {
+  color: #666;
+}
+
+
+
+
+/* 圖片放大 */
+.container li:hover {
+  transform: scale(1.2);
+
+}
+
+.container img:hover {
+
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 20, .6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .container ul {
   margin: 100px auto 0;
   width: 1200px;
@@ -31,6 +214,7 @@ header h1 {
 .container ul li img{
   
   /* width: 100%; */
+/*
   width: 400px;
   height: 250px;
   display: block;
@@ -71,4 +255,4 @@ header h1 {
 }
 
 
-
+*/

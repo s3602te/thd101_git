@@ -1,16 +1,70 @@
 /* ================header================ */
 
-header {}
+
+
+
+/* LOGO */
+.logo_top {
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 30%;
+    /* padding: 200px auto; */
+    margin: 0 auto;
+    /* border: 5px solid red; */
+    background-color: rgba(255, 255, 255, 0.384);
+    height: auto;
+    transform: translate(-50%, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.logo {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    height: 200px;
+}
+
+.logo a {
+    width: 100%;
+    height: 200px;
+    display: block;
+    /* outline: 1px solid tomato; */
+
+}
+
+/* LOGO下滑縮小 */
+.shrink {
+    width: 10%;
+    top: 10px;
+    left: 90%;
+    transform: translate(0, 0);
+    /* justify-self: start; */
+}
+
+
+
+
+
+
+
+
+
 
 /* 標題 */
 
-h1 {
+header {}
+
+header h1 {
     text-align: center;
     width: 500px;
-    font-size: 50px;
+    font-size: 7rem;
     margin: 0px auto;
-    padding-top: 50px;
-    padding-bottom: 150px;
+    padding-top: 200px;
+    padding-bottom: 50px;
 }
 
 h2 {
@@ -18,15 +72,23 @@ h2 {
     width: 55%;
     font-size: 32px;
     margin: 0px auto;
+
+    font-family: '標楷體';
+    font-weight: bold;
 }
 
 h3 {
-    font-family: '微軟正黑體';
+
+    font-family: '標楷體';
     text-align: center;
-    width: 55%;
-    font-size: 24px;
+    /* width: 55%; */
+    font-size: 2rem;
     margin: 0px auto;
+    padding-top: 20px;
 }
+
+
+/* ================================= */
 
 
 .label {
@@ -34,56 +96,112 @@ h3 {
     /* border: 5px solid rgb(179, 241, 6); */
     width: 50%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
-h6 {
+.warn {
     color: red;
     float: right;
-    padding-right: 380px;
     padding-top: 30px;
-    font-size: 16px;
-    /* border: 5px solid rgb(30, 255, 0); */
+    font-size: 1.6rem;
     margin: 0 auto;
-
+    font-style: italic;
+    padding-right: 80px;
+    
+    /* border: 5px solid rgb(30, 255, 0); */
 }
+
+
+
+
+input[type="text"] {
+    background-color: #D4A373;
+    border: 2px solid #D4A373;
+}
+
+
+
+
+
+
+
+.placeholder {
+    color: white;
+}
+
+
+input::placeholder {
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
 
 .label ul {
     /* border: 5px solid green; */
     width: 50%;
     margin: 0 auto;
-    font-size: 30px;
+    padding: 0 20px;
+    font-size: 3rem;
 }
 
 .label li {
     /* border: 5px dashed pink; */
-    width: 65%;
+    /* width: 65%; */
     margin: 0 auto 20px;
     padding: 20px;
 }
 
+li p {
+    /* border: 3px solid blue; */
+    width: 150px;
+    font-size: 2rem;
+    font-family: '微軟正黑體';
+    padding-bottom: 10px;
+}
 
-input{
-    font-size: 20px;
+
+input {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50px;
+    width: 200px;
 }
 
 
 
 
-p span{
+p span {
     color: red;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+/* ===================按鈕=================== */
+
 .but {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
-.but-l,.but-r {
-    
+.but-l,
+.submit {
+    width: 200px;
     margin: 0 10px;
     padding: 10px 20px;
     background-color: #D4A373;
@@ -92,31 +210,70 @@ p span{
     cursor: pointer;
 }
 
-.but-l:hover,.but-r:hover {
+.but-l:hover,
+.submit:hover {
     background-color: #d6d6d6;
-}
-
-
-select{
-
-    font-size: 19.2px;
-}
-
-
-input .name{
+    color: black;
+    font-weight: bold;
 }
 
 
 
 
-option{
-    
-    font-size: 14px;
+
+
+
+
+
+
+/* 下拉 */
+/* ===================================== */
+select {
+    border: 2px solid #D4A373;
+    background-color: #D4A373;
+    color: white;
+    width: 224px;
+    font-size: 3rem;
+    border-radius: 50px;
+    padding: 0 20px;
 }
 
-
-.checkbox {
-    background-color:black;
-    transform: scale(2);
+/* 建議內容 */
+.suggest {
+    padding: 10px;
+    height: 100px;
+    width: 250px;
+    background-color: #D4A373;
     border-radius: 20px;
-  }
+}
+
+
+
+/* 同意按鈕 */
+.checkbox {
+
+    transform: scale(2);
+    width: 20px;
+    accent-color: red;
+}
+
+
+
+
+
+li .agree {
+    /* border: 5px solid brown; */
+    font-size: 1.5rem;
+    font-style: italic;
+
+}
+
+
+
+
+
+
+option {
+    font-size: 1.4rem;
+    color: white;
+}

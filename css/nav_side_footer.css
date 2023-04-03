@@ -1,3 +1,8 @@
+html {
+    font-size: 62.5%;
+    /* 預設字級是16px, 16 x 62.5% ＝ 10 , 方便計算*/
+}
+
 /* 背景 */
 /* 字體 */
 body {
@@ -5,12 +10,15 @@ body {
     background-image: url("../img/background/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
+
+/* 竹 */
 .wrapper {
 
     background-image:
-        url("../img/icon/竹黑.svg");
+        url("../img/icon/bamboo.svg");
 
     background-repeat:
         repeat-y;
@@ -21,60 +29,88 @@ body {
         150px auto;
 
     /* background-size: cover; */
+
 }
 
-
-
-
-
-
+/* ====================================================== */
 
 /* 側邊 */
 .side_menu {
     z-index: 1000;
-    position: fixed;
+    position: absolute;
+    transition: .4s;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-
 }
 
 .side_menu ul {
+    /* outline: 5px solid palevioletred; */
     list-style: none;
-    padding: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+    display: flex;
+
+
+
+
 }
 
 .side_menu li {
+
+    /* outline: 5px solid rgb(16, 221, 30); */
     margin-bottom: 10px;
     line-height: 1.5;
+    width: 100%;
 }
 
 .side_menu a {
+    /* outline: 5px solid rgb(22, 22, 244); */
     display: block;
     text-decoration: none;
-    text-align: center;
-    color: white;
+    font-size: 1.5rem;
     padding: 10px;
     border-radius: 10px;
     background-color: #D4A373;
+    color: white;
+    /* font-weight: bold; */
+    text-align: center;
     transition: background-color 0.3s ease;
 }
 
 .side_menu a:hover {
-    background-color: #d6d6d6;
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
 }
 
 
 
 
 
-/* 底部 */
+
+
+
+
+
+
+
+
+
+/* ====================================================== */
+
+
+
+/* 訂位炸蝦 */
 .bottom_side_menu {
+    /* outline: 2px solid red; */
     z-index: 1000;
-    position: fixed;
-    top: 90%;
+    position: absolute;
+    top: 80%;
+    transition: .4s;
     right: 0;
     transform: translateY(-50%);
+    margin-right: 50px;
 }
 
 .bottom_side_menu ul {
@@ -89,17 +125,52 @@ body {
 .bottom_side_menu a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #333;
     padding: 10px;
-    width: 50px;
+    width: 70px;
     text-align: center;
-    border-radius: 50%;
-    background-color: #D4A373;
+    border-radius: 10px;
+    /* background-color: #D4A373; */
+    color: black;
+    font-weight: bold;
     transition: background-color 0.3s ease;
+    font-size: 1.5rem;
 }
+
+.bottom_side_menu img {
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom_side_menu:hover img:nth-child(1) {
+    animation: gogo .001s alternate infinite;
+    /* < 0.01=影分身 不要影分身0.1 */
+    /* if不要搖頭搖尾巴 child(2) 秒數0.01 */
+    transform-origin: bottom;
+}
+
+@keyframes gogo {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+
+}
+
 
 .bottom_side_menu a:hover {
-    background-color: #d6d6d6;
+    /* background-color: #ddd; */
+    color: rgb(197, 82, 5);
+    /* background-color: red; */
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 
 
@@ -110,7 +181,7 @@ body {
 
 
 
-
+/* ====================================================== */
 
 
 
@@ -127,24 +198,58 @@ footer {
     overflow: hidden;
 }
 
+/* 底下LOGO */
+.logo_but {
+    /* border: 5px solid lemonchiffon; */
+    float: left;
+    width: 300px;
+}
+
 
 footer .logo {
-    /* border: 2px solid red; */
+    /* border: 2px solid rgb(86, 237, 44); */
     float: left;
 
 }
 
-footer .logo img {
-    /* border: 5px solid orange; */
-    width: 150px;
-    padding: 20px 0 0 20px;
-}
+
 
 footer p {
-    /* border: 1px solid yellow; */
-    text-align: center;
+    /* border: 5px solid yellow; */
+    text-align: justify;
     line-height: 2.5;
+
 }
+
+.time {
+    /* border: 5px solid greenyellow; */
+    text-align: center;
+    line-height: 2;
+
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 社群icon */
 
 footer ul {
     /* border: 2px solid yellowgreen; */
@@ -152,11 +257,12 @@ footer ul {
     font-size: 30px;
     color: chartreuse;
     line-height: 2.5;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 
 i {
     /* border: 5px solid red; */
     color: black;
+    margin: 0;
 }

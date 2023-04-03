@@ -5,38 +5,136 @@
 
 /* ================header================ */
 
-header {}
-
-header .logo {
-    /* border: 3px solid red; */
-    width: 450px;
-    display: block;
-    margin: 50px auto 0;
-
+header {
+    /* border: 2px solid rgb(111, 255, 0); */
 }
 
 
 
+/* LOGO */
+.logo_top {
 
-.wrapper .top {
-    margin: 50px 0;
-}
-
-
-
-.wrapper .top .media {}
-
-.wrapper .top .media img {
-    display: block;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 30%;
+    /* padding: 200px auto; */
     margin: 0 auto;
+    /* border: 5px solid red; */
+    background-color: rgba(255, 255, 255, 0.384);
+    height: auto;
+    transform: translate(-50%, 0);
+    transition: all 0.5s ease-in-out;
+    z-index: 10000;
+}
+
+
+
+.logo {
     width: 100%;
-    /* width: 1920px; */
-    /* max-width: 100vw; */
+    /* display: flex;
+    justify-content: center; */
+    height: 200px;
+}
+
+.logo a {
+    width: 100%;
+    height: 200px;
+    display: block;
+    /* outline: 1px solid tomato; */
 
 }
 
+/* LOGO下滑縮小 */
+.shrink {
+    width: 10%;
+    top: 10px;
+    left: 90%;
+    transform: translate(0, 0);
+    /* justify-self: start; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 主視覺影片 */
+.media {
+    margin-top: 200px;
+}
+
+/* 白遮罩 */
 
 .white {
+    margin: 0 auto;
     width: 100%;
     height: 52.234vw;
     position: absolute;
@@ -45,10 +143,9 @@ header .logo {
     display: block;
 }
 
-/* video{
-    width: 100vw;
-    height: 56.734vw;
-} */
+video {
+    position: relative;
+}
 
 
 
@@ -66,15 +163,17 @@ main .title {
 main .title p {
     width: 600px;
     display: block;
-    font-size: 28px;
+    font-size: 3rem;
     line-height: 3;
-    margin: 0 auto;
+    margin: 150px auto 300px;
+    text-shadow: 3px 3px 1px rgba(250, 176, 2, 0.79);
+
 
 }
 
 /* 字首放大 */
 main .title p::first-letter {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 
@@ -82,70 +181,84 @@ main .title p::first-letter {
 
 .pic .pic_logo img {
     display: block;
-    margin: 0 auto 300px;
+    margin: 300px auto;
+    ;
 }
 
 .pic .pic_main img {
-    width: 1080px;
+    width: 900px;
     display: block;
     margin: 0 auto 300px;
+    /* border-radius: 25px; */
+    box-shadow: 23px 23px 25px 2px rgba(0, 0, 20, .6);
+
 }
 
 
-main .right-to-left1 {
-    font-size: 32px;
-    margin: 0 auto;
+.right-to-left1 {
+    font-size: 3rem;
+    margin: 300px auto;
     position: relative;
-    height: 500px;
-    /* outline:1px solid tomato; */
+    /* height: 500px; */
+    /* outline: 5px solid tomato; */
     width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 300px;
+
+
+
+    /* 直行字 */
+    writing-mode: vertical-rl;
+    /* text-orientation: upright; */
+
+}
+
+
+.right-to-left1 p {
+    height: 500px;
+    line-height: 2.5;
+    text-shadow: 3px 3px 1px rgba(250, 176, 2, 0.79);
 
 }
 
 
 
-/* 反轉圖片 */
+
+
+
+
+
+
+/* 浮世繪海右到左 */
 .text_top img {
+    /* border: 5px solid green; */
     position: absolute;
-    /* right: 0px; */
-    /* bottom: -3640px; */
-    transform: scaleX(-1);
-    width: 750px;
-    right: -240px;
-    bottom: -240px;
+    width: 400px;
+    right: -900px;
+    bottom: 50px;
+
     display: block;
+    transition: 1.5s;
+
+
 }
+
 
 /* ===========================================================done */
 
-
-
-
-/* 直行字 */
-main .right-to-left1 {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    line-height: 4;
-}
-
-
-
-
-
-
-
-
 .right-to-left2 {
+
+    font-size: 3rem;
     margin: 0 auto;
-    font-size: 32px;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    line-height: 4;
     position: relative;
+    /* border: 5px solid blue; */
+    writing-mode: vertical-rl;
+    text-shadow: 3px 3px 1px rgba(250, 176, 2, 0.79);
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -153,32 +266,38 @@ main .right-to-left1 {
 .right-to-left-title {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    line-height: 4;
     font-weight: bold;
-    font-size: 42px;
+    line-height: 1.5;
+
 }
 
 .right-to-left2 p {
     margin-right: 20px;
+    line-height: 2.2;
 }
 
 
 .text_down img {
-    /* display: block; */
-    width: 750px;
+    /* border: 5px solid rgb(255, 0, 170); */
     position: absolute;
-    top: 10%;
-    left: -40%;
+    width: 380px;
+    top: 100px;
+    left: -1000px;
+    transition: 1.5s;
+
+
 
 }
+
+
+
 
 
 main .menu .title h1 {
     margin: 200px auto 50px;
     width: 900px;
     text-align: center;
-    font-size: 68px;
-    /* border: 5px solid red; */
+    font-size: 7rem;
 }
 
 
@@ -190,34 +309,109 @@ main .menu .title h1 {
 
 
 
+/* 內容物 */
 
-.menu .container ul {
-    margin: 0 auto;
-    width: 1540px;
+
+.container {
+    /* outline: 5px solid blue; */
+
+}
+
+.container ul {
+
+    /* outline: 5px solid red; */
     display: flex;
+    width: 900px;
+    margin: 0 auto;
     flex-wrap: wrap;
-    padding-bottom: 50px;
-    justify-content: space-evenly;
 }
 
-.menu .container ul li {
-    /* outline: 5px solid blueviolet; */
-}
-
-.menu .container ul li img {
-    /* outline:  5px solid blue; */
-    width: 500px;
-    flex-basis: 40%;
-    margin: 80px;
-}
-
-
-.menu .container ul li a {
+.container li {
     /* outline: 5px solid green; */
+    /* flex-grow: 1; */
+    flex-basis: 400px;
+    /* flex-shrink: 0; */
+    margin: 0 25px 50px;
+    display: block;
+
+    cursor: pointer;
+
+
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
 
 }
 
-.menu .container ul li p {
-    font-size: 28px;
+.container a {
+    display: block;
+    margin: 0 auto;
+    /* outline: 5px solid yellow; */
+}
+
+.container p {
+    /* font-family: '微軟正黑體'; */
+    /* outline: 5px solid pink; */
     text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
 }
+
+.container img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 20px;
+
+
+}
+
+
+.container a {
+    color: #D4A373;
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: #D4A373;
+}
+
+a:visited {
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 圖片放大 */
+.container li:hover {
+    transform: scale(1.2);
+
+}
+
+.container img:hover {
+
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 20, .6);
+}
+
+
+
+
+
+
+
+
+

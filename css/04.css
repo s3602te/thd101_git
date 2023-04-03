@@ -5,7 +5,53 @@
 
 /* ================header================ */
 
-header {}
+
+
+/* LOGO */
+.logo_top {
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 30%;
+    /* padding: 200px auto; */
+    margin: 0 auto;
+    /* border: 5px solid red; */
+    background-color: rgba(255, 255, 255, 0.384);
+    height: auto;
+    transform: translate(-50%, 0);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  
+  
+  .logo {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    height: 200px;
+  }
+  
+  .logo a {
+    width: 100%;
+    height: 200px;
+    display: block;
+    /* outline: 1px solid tomato; */
+  
+  }
+  
+  /* LOGO下滑縮小 */
+  .shrink {
+    width: 10%;
+    top: 10px;
+    left: 90%;
+    transform: translate(0, 0);
+    /* justify-self: start; */
+  }
+  
+  
+  
+  
 
 header .logo {
     /* border: 3px solid red; */
@@ -15,14 +61,15 @@ header .logo {
 
 }
 
+/* 標題 */
+
 header h1 {
     text-align: center;
     width: 500px;
-    font-size: 50px;
+    font-size: 7rem;
     margin: 0px auto;
-    padding-top: 50px;
+    padding-top: 200px;
 }
-
 
 
 
@@ -41,13 +88,68 @@ header h1 {
 
 
 
-h1 {
+/* h1 {
     margin: 200px auto 50px;
     width: 900px;
     text-align: center;
     font-size: 32px;
-    /* border: 5px solid red; */
+    border: 5px solid red;
+} */
+
+
+.menu h1{
+    /* border: 2px solid red; */
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
 }
+
+
+
+.but {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+button {
+    /* width: 40px; */
+    /* height: 40px; */
+    border-radius: 10%;
+    margin: 0 30px;
+    background-color: #D4A373;
+    font-weight: bold;
+    transition: background-color .5s ease;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: white;
+}
+
+
+.but a {
+    line-height: 1.3;
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==================store================== */
@@ -65,21 +167,23 @@ h1 {
 
 .store li {
     display: flex;
-    /* border: 5px solid green; */
-    justify-content: space-evenly;
+    border-bottom: 5px double #D4A373;
+    justify-content: space-around;
     position: relative;
     padding: 50px;
     margin: 50px;
+    /* outline: 5px solid red; */
 }
 
 .store .text{
     /* border: 2px solid brown; */
     padding-top: 2%;
+    margin: 0 20px;
 }
 .store h2 {
     /* border: 2px solid rgb(172, 194, 48); */
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
     padding-bottom: 30px;
     text-align: center;
     letter-spacing: 5px;
@@ -91,23 +195,24 @@ h1 {
     /* border: 2px solid rgb(255, 0, 191); */
     line-height: 2;
     letter-spacing: 5px;
+    width: 300px;
+    text-align: left;
+    margin-top: 30px;
 }
 
 .store img {
     /* border: 2px solid rgb(18, 217, 252); */
     width: 400px;
-    height: 250px;
+    height: 300px;
 }
 
-p a {
+p span {
     /* border: 5px solid red; */
 
     /* 按鈕 */
     background-color: #D4A373;
-    text-decoration: none;
     font-weight: bold;
-    width: 100px;
-    text-align: center;
+    padding: 0 20px;
     border-radius: 15px;
     display: block;
     line-height: 2;
@@ -115,13 +220,13 @@ p a {
 
     /* 位置 */
     position: absolute;
-    right: 53%;
     top: 80%;
 }
 
-p a:hover{
+p span:hover{
     /* background-color: #FAEDCD; */
     background-color: #d6d6d6;
+    cursor: pointer;
 }
 
 /* ==================store================== */

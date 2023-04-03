@@ -11,7 +11,7 @@
     <!-- RWD -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>訂位</title>
+    <title>海老屋 | 訂位</title>
 
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
@@ -22,16 +22,20 @@
         href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+TC:wght@100&family=Yuji+Boku&display=swap"
         rel="stylesheet">
 
+
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 </head>
 
 <body>
 
-
+    <a href="index.html"><img class="logo_top" id="logo_main" src="img/logo/logo_main.png" alt=""></a>
 
 
     <div class="wrapper">
@@ -47,79 +51,102 @@
 
         <main>
 
+            <ul class="main_ul">
+
+                <li class="main_li">
+                    <div class="select">
+                        <ul class="inner_ul">
+                            <!-- 姓名 -->
+                            <li class="inner_li">
+                                <p>姓名<span>*</span></p>
+                                <input class="name" type="text" placeholder="請輸入您的姓名" />
+                            </li>
+                            <!-- 電話 -->
+                            <li class="inner_li">
+                                <p>電話<span>*</span></p>
+                                <input class="phone" type="text" placeholder="請輸入您的電話" />
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
 
-            <div class="select">
-                <label for="date">選擇日期：</label>
-                <input type="date" id="date" name="date">
-            </div>
+                <li class="main_li">
+                    <div class="select">
+                        <ul class="inner_ul">
+                            <li class="inner_li">
+                                <label for="date">選擇日期：</label>
+                                <input type="date" id="date" name="date">
+
+                            </li>
+
+                            <!-- <div class="select"> -->
+                            <li class="inner_li">
+                                <label for="time">用餐時段</label>
+                                <select name="time" id="time">
+                                    <option value="null">--</option>
+                                    <option value="11:00-13:00">11:00-13:00</option>
+                                    <option value="17:00-19:00">17:00-19:00</option>
+                                    <option value="19:00-21:00">19:00-21:00</option>
+                                </select>
+                            </li>
+                            <!-- </div> -->
 
 
+                        </ul>
+                    </div>
+                </li>
 
 
-            <div class="select">
-                <label for="time">用餐時段</label>
-                <select name="time" id="time">
-                    <option value="null">--</option>
-                    <option value="11:00-13:00">11:00-13:00</option>
-                    <option value="17:00-19:00">17:00-19:00</option>
-                    <option value="19:00-21:00">19:00-21:00</option>
-                </select>
-            </div>
+                <li class="main_li">
+                    <div class="select">
+                        <ul class="inner_ul">
+                            <li class="inner_li">
+                                <label for="people">用餐人數</label>
+                                <select name="people_ad" id="people_ad">
+                                    <option value="null">成人</option>
+                                    <option value="num1">一位</option>
+                                    <option value="num2">二位</option>
+                                    <option value="num3">三位</option>
+                                    <option value="num4">四位</option>
+                                    <option value="num5+">五位以上</option>
+                                </select>
 
-
-            <div class="select">
-                <label for="people">用餐人數</label>
-                <select name="people_ad" id="people_ad">
-                    <option value="null">成人</option>
-                    <option value="num1">一位</option>
-                    <option value="num2">二位</option>
-                    <option value="num3">三位</option>
-                    <option value="num4">四位</option>
-                    <option value="num5+">五位以上</option>
-                </select>
-                <select name="people_chi" id="people_chi">
-                    <option value="null">兒童</option>
-                    <option value="num1">一位</option>
-                    <option value="num2">二位</option>
-                </select>
-            </div>
-
-
-
-            <div class="select">
-                <label for="restaurant">用餐餐廳</label>
-                <select name="restaurant" id="restaurant">
-                    <option value="null">--</option>
-                    <option value="store1">台北市士林旗艦店</option>
-                    <option value="store2">台北市京站分店</option>
-                    <option value="store3">新北市三重分店</option>
-                    <option value="store4">台中第七市場分店</option>
-                </select>
-            </div>
-
-
-            <div class="con">
-                <ul>
-                    <!-- 姓名 -->
-                    <li>
-                        <p><span>*</span>姓名</p>
-                        <input class="name" type="text" placeholder="請輸入您的姓名" />
-                    </li>
-                    <!-- 電話 -->
-                    <li>
-                        <p><span>*</span>電話</p>
-                        <input class="phone" type="text" placeholder="請輸入您的電話" />
-                    </li>
-                </ul>
-            </div>
-
-            <button><a href="#">確定送出</a> </button>
-
-
+                                <select name="people_chi" id="people_chi">
+                                    <option value="null">兒童</option>
+                                    <option value="num1">一位</option>
+                                    <option value="num2">二位</option>
+                                </select>
+                            </li>
 
 
 
+                            <li class="inner_li">
+
+                                <div class="select f" >
+                                    <label for="restaurant">用餐餐廳</label>
+                                    <select name="restaurant" id="restaurant">
+                                        <option value="null">--</option>
+                                        <option value="store1">台北市士林旗艦店</option>
+                                        <option value="store2">台北市京站分店</option>
+                                        <option value="store3">新北市三重分店</option>
+                                        <option value="store4">台中第七市場分店</option>
+                                    </select>
+                                </div>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+
+
+
+            <input class="button" type="submit" value="確定送出">
+
+            </ul>
         </main>
 
     </div>
@@ -128,9 +155,13 @@
 
 
 
-    <!-- 右側 -->
 
+            
+    
+    
+    <!-- 右側 -->
     <div class="side_menu">
+
         <ul>
             <li><a href="index.html">首頁</a></li>
             <li><a href="new.html">最新消息</a></li>
@@ -142,11 +173,35 @@
     </div>
 
 
+    <!-- 右側JS -->
+
+    <script>
+        let side_menu = document.getElementsByClassName("side_menu")
+        $(function () {
+            let bottom_side_menu = document.getElementsByClassName("bottom_side_menu")
+            // alert(bottom_side_menu)  //確定抓到
+            document.addEventListener("scroll", () => {
+
+                // 側邊攔
+                side_menu[0].style.top = `calc(${pageYOffset}px + 50vh`;
+
+                // 立即訂位
+                bottom_side_menu[0].style.top = `calc(${pageYOffset}px + 80vh)`;
+
+            });
+        });
+    </script>
+
+
     <!-- 右下側 -->
 
     <div class="bottom_side_menu">
         <ul>
-            <li><a href="booking.html">立即<br>訂位</a></li>
+            <li><a href="booking.html">立即訂位
+                    <img class="pic1" src="./img/Ebi-tarou1.png" alt="">
+                    <img class="pic2" src="./img/Ebi-tarou2.png" alt="">
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -155,10 +210,7 @@
     <!-- 底 -->
     <footer>
 
-        <div class="logo">
-            <img src="img/logo/logo.png" alt="">
-        </div>
-
+        <img class="logo_but" src="img/logo/logo_footer.png" alt="">
         <ul>
             <il><a href=""><i class="fa-brands fa-facebook"></i></a></il>
             <il><a href=""><i class="fa-brands fa-square-instagram"></i></a></il>
@@ -167,13 +219,58 @@
         </ul>
 
         <p>
-            <time>
-                電話：02-2882-0369 ｜ 週一~週五08:00～21:00 ｜ 週六11:00～20:30 <br> Copyright © 海老屋ebiya Co.,LTD All
-                Rights
-                Reserved
-            </time>
+        <div class="time">
+            電話：02-2882-0369 ｜ 週一~週五08:00～21:00 ｜ 週六11:00～20:30
+            <br>
+            Copyright © 海老屋ebiya Co.,LTD All Rights Reserved
+            <br>
+            本網站為緯育TibaMe前端工程師班THD101專題作品，僅供學習、展示用（參考資料）。
+        </div>
         </p>
     </footer>
+
+
+
+
+
+
+
+
+    <!-- LOGO滾 -->
+    <script>
+        window.addEventListener('scroll', function () {
+            let scrollPosition = window.scrollY;
+            let image = document.getElementById('logo_main');
+
+
+            if (scrollPosition > 0) {
+                image.classList.add('shrink');
+            } else {
+                image.classList.remove('shrink');
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+<script>
+
+
+</script>
 
 </html>
