@@ -92,10 +92,10 @@ header h1 {
 
 h2 {
   font-size: 2rem;
-  padding-top: 20px;
+  padding-top: 50px;
   text-align: center;
   font-weight: bold;
-  color: #D4A373;
+  color: #000000;
 }
 
 .container a {
@@ -152,7 +152,7 @@ a:visited {
 
 
 /* 圖片放大 */
-.container li:hover {
+.container img:hover {
   transform: scale(1.2);
 
 }
