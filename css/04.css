@@ -1,104 +1,59 @@
-.out {
-    width: 100%;
-}
-
-
 /* ================header================ */
-
-
-
 /* LOGO */
 .logo_top {
-
     position: fixed;
     top: 0;
     left: 50%;
     width: 30%;
-    /* padding: 200px auto; */
     margin: 0 auto;
-    /* border: 5px solid red; */
     background-color: rgba(255, 255, 255, 0.384);
     height: auto;
     transform: translate(-50%, 0);
     transition: all 0.5s ease-in-out;
-  }
-  
-  
-  
-  .logo {
-    width: 100%;
-    /* display: flex;
-    justify-content: center; */
-    height: 200px;
-  }
-  
-  .logo a {
-    width: 100%;
-    height: 200px;
-    display: block;
-    /* outline: 1px solid tomato; */
-  
-  }
-  
-  /* LOGO下滑縮小 */
-  .shrink {
+    z-index: 10000;
+}
+
+/* LOGO下滑縮小 */
+.shrink {
     width: 10%;
     top: 10px;
     left: 90%;
     transform: translate(0, 0);
-    /* justify-self: start; */
-  }
-  
-  
-  
-  
-
-header .logo {
-    /* border: 3px solid red; */
-    width: 450px;
-    display: block;
-    margin: 50px auto 0;
-
 }
 
-/* 標題 */
-
+/* ================header================ */
+/* 店鋪資訊 */
 header h1 {
     text-align: center;
-    width: 500px;
+    width: 100%;
     font-size: 7rem;
     margin: 0px auto;
     padding-top: 200px;
 }
 
-
-
-
-
-
-
-/* ================wrapper================ */
-
-
-
-
-
-
-/* ================main================ */
-
-
-
-/* h1 {
-    margin: 200px auto 50px;
-    width: 900px;
+/* 北中南東海-all */
+.but {
+    margin: 0 auto;
     text-align: center;
-    font-size: 32px;
-    border: 5px solid red;
-} */
+    padding-top: 50px;
+    /* border: 5px solid red; */
+}
 
+button {
+    border-radius: 10%;
+    margin: 0 30px;
+    background-color: #D4A373;
+    font-weight: bold;
+    transition: background-color .5s ease;
+    cursor: pointer;
+}
 
-.menu h1{
-    /* border: 2px solid red; */
+button:hover {
+    background-color: white;
+}
+
+/* 分布據點 */
+.menu h1 {
     font-size: 3rem;
     text-align: center;
     width: 100%;
@@ -106,80 +61,39 @@ header h1 {
     margin: 0 auto;
 }
 
-
-
-.but {
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-button {
-    /* width: 40px; */
-    /* height: 40px; */
-    border-radius: 10%;
-    margin: 0 30px;
-    background-color: #D4A373;
-    font-weight: bold;
-    transition: background-color .5s ease;
-    cursor: pointer;
-    
-}
-
-button:hover {
-    background-color: white;
-}
-
-
-.but a {
-    line-height: 1.3;
-    display: block;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==================store================== */
+/* 商店 */
 .store {
     /* border: 5px solid red; */
     padding-bottom: 100px;
 }
 
+/* 商店內 */
 .store ul {
-
     /* border: 5px solid blue; */
     width: 70%;
     margin: 0 auto;
 }
 
+/* 各自 */
 .store li {
+    /* outline: 5px solid red; */
     display: flex;
     border-bottom: 5px double #D4A373;
     justify-content: space-around;
     position: relative;
     padding: 50px;
     margin: 50px;
-    /* outline: 5px solid red; */
 }
 
-.store .text{
+/* 文字 */
+.store .text {
     /* border: 2px solid brown; */
     padding-top: 2%;
     margin: 0 20px;
 }
+
+/* 店名 */
 .store h2 {
     /* border: 2px solid rgb(172, 194, 48); */
     font-weight: bold;
@@ -187,9 +101,9 @@ button:hover {
     padding-bottom: 30px;
     text-align: center;
     letter-spacing: 5px;
-
 }
 
+/* 內文 */
 .store p {
     font-family: '微軟正黑體';
     /* border: 2px solid rgb(255, 0, 191); */
@@ -200,15 +114,16 @@ button:hover {
     margin-top: 30px;
 }
 
+/* 圖 */
 .store img {
     /* border: 2px solid rgb(18, 217, 252); */
     width: 400px;
     height: 300px;
 }
 
+/* 位置資訊 */
 p span {
     /* border: 5px solid red; */
-
     /* 按鈕 */
     background-color: #D4A373;
     font-weight: bold;
@@ -217,16 +132,293 @@ p span {
     display: block;
     line-height: 2;
     color: white;
-
     /* 位置 */
     position: absolute;
     top: 80%;
 }
 
-p span:hover{
+p span:hover {
     /* background-color: #FAEDCD; */
     background-color: #d6d6d6;
     cursor: pointer;
 }
 
-/* ==================store================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================414px=================================== */
+
+@media (max-width: 414px) {
+
+    /* ================header================ */
+    /* LOGO */
+    .logo_top {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 30%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.384);
+        height: auto;
+        transform: translate(-50%, 0);
+        transition: all 0.5s ease-in-out;
+        z-index: 10000;
+    }
+
+    /* LOGO下滑縮小 */
+    .shrink {
+        width: 50%;
+        top: 10px;
+        left: 50%;
+        transform: translate(0, 0);
+    }
+
+    /* ================header================ */
+    /* 店鋪資訊 */
+    header h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        margin: 0px auto;
+        padding-top: 100px;
+    }
+
+    /* 北中南東海-all */
+    .but {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 50px;
+        /* border: 5px solid red; */
+    }
+
+    button {
+        border-radius: 10%;
+        margin: 0 5px;
+        background-color: #D4A373;
+        font-weight: bold;
+        transition: background-color .5s ease;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: white;
+    }
+
+    /* 分布據點 */
+    .menu h1 {
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+
+    /* ==================store================== */
+    /* 商店 */
+    .store {
+        /* border: 5px solid red; */
+        padding-bottom: 40px;
+    }
+
+    /* 商店內 */
+    .store ul {
+        /* border: 5px solid blue; */
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* 各自 */
+    .store li {
+        /* outline: 5px solid red; */
+        display: flex;
+        border-bottom: 5px double #D4A373;
+        position: relative;
+        padding: 10px;
+        margin: 10px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* 文字 */
+    .store .text {
+        /* border: 2px solid brown; */
+        padding-top: 2%;
+        margin: 0 20px;
+    }
+
+    /* 店名 */
+    .store h2 {
+        /* border: 2px solid rgb(172, 194, 48); */
+        font-weight: bold;
+        font-size: 2rem;
+        padding-bottom: 0px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+    /* 內文 */
+    .store p {
+        font-family: '微軟正黑體';
+        /* border: 2px solid rgb(255, 0, 191); */
+        line-height: 2;
+        letter-spacing: 5px;
+        width: 300px;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    /* 圖 */
+    .store img {
+        /* border: 2px solid rgb(18, 217, 252); */
+        width: 50%;
+        height: 30%;
+    }
+
+    /* 位置資訊 */
+    p span {
+        /* border: 5px solid red; */
+        /* 按鈕 */
+        background-color: #D4A373;
+        font-weight: bold;
+        padding: 0 20px;
+        border-radius: 15px;
+        display: block;
+        line-height: 2;
+        color: white;
+        /* 位置 */
+        position: absolute;
+        top: 80%;
+        right: 20px;
+    }
+
+    p span:hover {
+        /* background-color: #FAEDCD; */
+        background-color: #d6d6d6;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

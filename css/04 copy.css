@@ -1,0 +1,152 @@
+/* ================header================ */
+/* LOGO */
+.logo_top {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.384);
+    height: auto;
+    transform: translate(-50%, 0);
+    transition: all 0.5s ease-in-out;
+    z-index: 10000;
+}
+
+/* LOGO下滑縮小 */
+.shrink {
+    width: 10%;
+    top: 10px;
+    left: 90%;
+    transform: translate(0, 0);
+}
+
+/* ================header================ */
+/* 店鋪資訊 */
+header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 7rem;
+    margin: 0px auto;
+    padding-top: 200px;
+}
+
+/* 北中南東海-all */
+.but {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    
+    
+}
+
+button {
+    border: 5px solid red;
+    border-radius: 10%;
+    margin: 0 30px;
+    background-color: #D4A373;
+    font-weight: bold;
+    transition: background-color .5s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: white;
+}
+
+/* 各自 */
+.store li {
+    position: absolute;
+    outline: 5px solid red;
+    display: flex;
+    border-bottom: 5px double #D4A373;
+    justify-content: space-around;
+    position: relative;
+    padding: 50px;
+    margin: 50px;
+    display: none;
+}
+
+
+/* 分布據點 */
+.menu h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+/* ==================store================== */
+/* 商店 */
+.store {
+    /* border: 5px solid red; */
+    padding-bottom: 100px;
+}
+
+/* 商店內 */
+.store ul {
+    /* border: 5px solid blue; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+/* 文字 */
+.store .text {
+    /* border: 2px solid brown; */
+    padding-top: 2%;
+    margin: 0 20px;
+}
+
+/* 店名 */
+.store h2 {
+    /* border: 2px solid rgb(172, 194, 48); */
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+/* 內文 */
+.store p {
+    font-family: '微軟正黑體';
+    /* border: 2px solid rgb(255, 0, 191); */
+    line-height: 2;
+    letter-spacing: 5px;
+    width: 300px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* 圖 */
+.store img {
+    /* border: 2px solid rgb(18, 217, 252); */
+    width: 400px;
+    height: 300px;
+}
+
+/* 位置資訊 */
+p span {
+    /* border: 5px solid red; */
+    /* 按鈕 */
+    background-color: #D4A373;
+    font-weight: bold;
+    padding: 0 20px;
+    border-radius: 15px;
+    display: block;
+    line-height: 2;
+    color: white;
+    /* 位置 */
+    position: absolute;
+    top: 80%;
+}
+
+p span:hover {
+    /* background-color: #FAEDCD; */
+    background-color: #d6d6d6;
+    cursor: pointer;
+}

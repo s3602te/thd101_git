@@ -104,16 +104,19 @@
                         </p>
                     </a>
                 </li> -->
-
-
-
-
-
-
-
-
             </ul>
         </div>
+
+        <div class="but">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+
+        </div>
+
+
     </div>
 
 
@@ -126,76 +129,75 @@
 
 
 
+    <!-- 右側 -->
+    <div class="side_menu">
 
-   <!-- 右側 -->
-   <div class="side_menu">
-
-    <ul>
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="new.html">最新消息</a></li>
-        <li><a href="menu.html">菜單</a></li>
-        <li><a href="store.html">店鋪資訊</a></li>
-        <li><a href="about.html">關於我們</a></li>
-        <li><a href="connection.html">聯絡我們</a></li>
-    </ul>
-</div>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="new.html">最新消息</a></li>
+            <li><a href="menu.html">菜單</a></li>
+            <li><a href="store.html">店鋪資訊</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="connection.html">聯絡我們</a></li>
+        </ul>
+    </div>
 
 
-<!-- 右側JS -->
+    <!-- 右側JS -->
 
-<script>
-    let side_menu = document.getElementsByClassName("side_menu")
-    $(function () {
-        let bottom_side_menu = document.getElementsByClassName("bottom_side_menu")
-        // alert(bottom_side_menu)  //確定抓到
-        document.addEventListener("scroll", () => {
+    <script>
+        let side_menu = document.getElementsByClassName("side_menu")
+        $(function () {
+            let bottom_side_menu = document.getElementsByClassName("bottom_side_menu")
+            // alert(bottom_side_menu)  //確定抓到
+            document.addEventListener("scroll", () => {
 
-            // 側邊攔
-            side_menu[0].style.top = `calc(${pageYOffset}px + 50vh`;
+                // 側邊攔
+                side_menu[0].style.top = `calc(${pageYOffset}px + 50vh`;
 
-            // 立即訂位
-            bottom_side_menu[0].style.top = `calc(${pageYOffset}px + 80vh)`;
+                // 立即訂位
+                bottom_side_menu[0].style.top = `calc(${pageYOffset}px + 80vh)`;
 
+            });
         });
-    });
-</script>
+    </script>
 
 
-<!-- 右下側 -->
+    <!-- 右下側 -->
 
-<div class="bottom_side_menu">
-    <ul>
-        <li><a href="booking.html">立即訂位
-                <img class="pic1" src="./img/Ebi-tarou1.png" alt="">
-                <img class="pic2" src="./img/Ebi-tarou2.png" alt="">
-            </a>
-        </li>
-    </ul>
-</div>
-
-
-
-<!-- 底 -->
-<footer>
-
-    <img class="logo_but" src="img/logo/logo_footer.png" alt="">
-    <ul>
-        <il><a href=""><i class="fa-brands fa-facebook"></i></a></il>
-        <il><a href=""><i class="fa-brands fa-square-instagram"></i></a></il>
-        <il><a href=""><i class="fa-brands fa-twitter"></i></a></il>
-        <il><a href=""><i class="fa-brands fa-youtube"></i></a></il>
-    </ul>
-
-    <p>
-    <div class="time">
-        電話：02-2882-0369 ｜ 週一~週五08:00～21:00 ｜ 週六11:00～20:30
-        <br>
-        Copyright © 海老屋ebiya Co.,LTD All Rights Reserved
-        <br>
-        本網站為緯育TibaMe前端工程師班THD101專題作品，僅供學習、展示用（參考資料）。
+    <div class="bottom_side_menu">
+        <ul>
+            <li><a href="booking.html">立即訂位
+                    <img class="pic1" src="./img/Ebi-tarou1.png" alt="">
+                    <img class="pic2" src="./img/Ebi-tarou2.png" alt="">
+                </a>
+            </li>
+        </ul>
     </div>
-    </p>
-</footer>
+
+
+
+    <!-- 底 -->
+    <footer>
+
+        <img class="logo_but" src="img/logo/logo_footer.png" alt="">
+        <ul>
+            <il><a href=""><i class="fa-brands fa-facebook"></i></a></il>
+            <il><a href=""><i class="fa-brands fa-square-instagram"></i></a></il>
+            <il><a href=""><i class="fa-brands fa-twitter"></i></a></il>
+            <il><a href=""><i class="fa-brands fa-youtube"></i></a></il>
+        </ul>
+
+        <p>
+        <div class="time">
+            電話：02-2882-0369 ｜ 週一~週五08:00～21:00 ｜ 週六11:00～20:30
+            <br>
+            Copyright © 海老屋ebiya Co.,LTD All Rights Reserved
+            <br>
+            本網站為緯育TibaMe前端工程師班THD101專題作品，僅供學習、展示用（參考資料）。
+        </div>
+        </p>
+    </footer>
 
 
 
@@ -204,20 +206,20 @@
 
 
 
-<!-- LOGO滾 -->
-<script>
-    window.addEventListener('scroll', function () {
-        let scrollPosition = window.scrollY;
-        let image = document.getElementById('logo_main');
+    <!-- LOGO滾 -->
+    <script>
+        window.addEventListener('scroll', function () {
+            let scrollPosition = window.scrollY;
+            let image = document.getElementById('logo_main');
 
 
-        if (scrollPosition > 0) {
-            image.classList.add('shrink');
-        } else {
-            image.classList.remove('shrink');
-        }
-    });
-</script>
+            if (scrollPosition > 0) {
+                image.classList.add('shrink');
+            } else {
+                image.classList.remove('shrink');
+            }
+        });
+    </script>
 
 
 

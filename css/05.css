@@ -1,41 +1,16 @@
-/* header */
-
-
-
-
-
-
+/* ================header================ */
 /* LOGO */
 .logo_top {
-
   position: fixed;
   top: 0;
   left: 50%;
   width: 30%;
-  /* padding: 200px auto; */
   margin: 0 auto;
-  /* border: 5px solid red; */
   background-color: rgba(255, 255, 255, 0.384);
   height: auto;
   transform: translate(-50%, 0);
   transition: all 0.5s ease-in-out;
-}
-
-
-
-.logo {
-  width: 100%;
-  /* display: flex;
-  justify-content: center; */
-  height: 200px;
-}
-
-.logo a {
-  width: 100%;
-  height: 200px;
-  display: block;
-  /* outline: 1px solid tomato; */
-
+  z-index: 10000;
 }
 
 /* LOGO下滑縮小 */
@@ -44,73 +19,42 @@
   top: 10px;
   left: 90%;
   transform: translate(0, 0);
-  /* justify-self: start; */
 }
 
-
-
-
-
-
-header {
-}
-
+/* ================header================ */
+/* 關於我們 */
 header h1 {
   text-align: center;
-  width: 500px;
+  width: 100%;
   font-size: 7rem;
   margin: 0px auto;
   padding-top: 200px;
 }
 
-
-
-
-
-
-
-
-
-
 /* ======================================== */
+/* 三圖白字 */
 main p {
   opacity: 0;
   color: white;
   padding: 40px;
-  font-size: 28px;
+  font-size: 3rem;
 }
 
-
-
+/* 三圖跳出來直行字 */
 li:hover p {
-
-  /* 直行字 */
-
   writing-mode: vertical-rl;
   text-orientation: upright;
   line-height: 3;
   opacity: 1;
-
   background-color: rgba(0, 0, 0, 0.267);
-
 }
 
-
-li .item2:hover p {
-  padding: 500px;
-}
-
-
-
-
-
-
+/* 三圖框 */
 main ul {
-  width: 1200px;
+  width: 1000px;
   height: 500px;
   margin: 50px auto 0;
   outline: 5px solid white;
-
   display: flex;
 }
 
@@ -121,20 +65,23 @@ main li {
   flex-basis: 0;
 }
 
+/* 三圖-1 */
 .item1 {
   background-image: url("../img/07.jpg");
   flex-grow: 1;
-  filter: saturate(0.4)
+  filter: saturate(0.4);
+  width: 100%;
 }
 
+/* 三圖-2 */
 main .item2 {
   background-image: url("../img/08.jpg");
   flex-grow: 1;
   filter: saturate(0.4);
-
-
+  width: 100%;
 }
 
+/* 三圖-2 */
 main .item2 p {
   position: absolute;
   right: 0;
@@ -142,31 +89,30 @@ main .item2 p {
   background-color: rgba(255, 255, 255, 0.521);
 }
 
-
+/* 三圖-3 */
 .item3 {
   background-image: url("../img/09.jpg");
   flex-grow: 1;
-  filter: saturate(0.4)
+  filter: saturate(0.4);
+  width: 100%;
 }
 
 li:hover {
   flex-grow: 5;
-  filter: saturate(1)
+  filter: saturate(1);
 }
 
+#main img{
+  display: none;
+}
 
 
 
 /* =========================================== */
 
-
-
-.section {}
-
 .section h2 {
-  font-size: 38px;
+  font-size: 4rem;
   font-weight: bold;
-  /* border: 2px solid red; */
   width: 100%;
   margin: 150px auto 50px;
   display: block;
@@ -177,10 +123,282 @@ li:hover {
   /* border: 5px solid blueviolet; */
   font-family: '標楷體';
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2.5rem;
   line-height: 1.6;
   width: 50%;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================414px=================================== */
+
+@media (max-width: 414px) {
+
+  /* ================header================ */
+  /* LOGO */
+  .logo_top {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.384);
+    height: auto;
+    transform: translate(-50%, 0);
+    transition: all 0.5s ease-in-out;
+    z-index: 10000;
+  }
+
+  /* LOGO下滑縮小 */
+  .shrink {
+    width: 50%;
+    top: 10px;
+    left: 50%;
+    transform: translate(0, 0);
+  }
+
+  /* ================header================ */
+  /* 關於我們 */
+  header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    margin: 0px auto;
+    padding-top: 100px;
+  }
+
+  /* ======================================== */
+  /* 三圖白字 */
+  #main{
+    display: none;
+  }
+
+
+  #main ul{
+
+  }
+
+#main li{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  main p {
+    opacity: 0;
+    color: white;
+    padding: 40px;
+    font-size: 3rem;
+  }
+
+
+  /* 三圖框 */
+  main ul {
+    width: 100%;
+    display: block;
+  }
+
+  main li {
+    /* border: 5px solid red; */
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* 三圖-1 */
+  .item1 {
+    background-image: url("../img/07.jpg");
+    width: 100%;
+  }
+
+  /* 三圖-2 */
+  main .item2 {
+    background-image: url("../img/08.jpg");
+    width: 100%;
+  }
+
+  /* 三圖-2 */
+  main .item2 p {
+    position: absolute;
+    right: 0;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.521);
+  }
+
+  /* 三圖-3 */
+  .item3 {
+    background-image: url("../img/09.jpg");
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* =========================================== */
+
+  .section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .section p {
+    /* border: 5px solid blueviolet; */
+    font-family: '標楷體';
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 150px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

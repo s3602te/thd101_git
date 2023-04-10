@@ -8,54 +8,55 @@
     <title>Document</title>
 
     <style>
-        .slideshow {
+        .hover-container {
+            width: 200px;
+            height: 200px;
             position: relative;
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
+            background-color: red;
         }
 
-        .slideshow img {
+        .hover-content {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
+            display: none;
+            background-color: blue;
         }
 
-        .slideshow img.active {
-            opacity: 1;
+        p{
+            height: 200000px;
         }
     </style>
-
-
 </head>
 
 <body>
 
-    <div class="slideshow">
-        <img src="./img/06.jpg" alt="Slide 1">
-        <img src="./img/07.jpg" alt="Slide 2">
-        <img src="./img/08.jpg" alt="Slide 3">
+
+    <div class="hover-container">
+        <div class="hover-content">
+            <p>這裡是內容</p>
+        </div>
     </div>
 
 
-
     <script>
-        var slides = document.querySelectorAll('.slideshow img');
-        var currentSlide = 0;
-        var slideInterval = setInterval(nextSlide, 100);
+        // 取得hover-container和hover-content元素
+        var container = document.querySelector('.hover-container');
+        var content = document.querySelector('.hover-content');
 
-        function nextSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
+        // 添加事件監聽器
+        container.addEventListener('mouseenter', function () {
+            content.style.display = 'block';
+        });
+
+        container.addEventListener('mouseleave', function () {
+            content.style.display = 'none';
+        });
 
     </script>
-
 </body>
 
 </html>
