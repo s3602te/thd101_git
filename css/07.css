@@ -1,40 +1,16 @@
 /* ================header================ */
-
-
-
-
-
 /* LOGO */
 .logo_top {
-
     position: fixed;
     top: 0;
     left: 50%;
     width: 30%;
-    /* padding: 200px auto; */
     margin: 0 auto;
-    /* border: 5px solid red; */
     background-color: rgba(255, 255, 255, 0.384);
     height: auto;
     transform: translate(-50%, 0);
     transition: all 0.5s ease-in-out;
-}
-
-
-
-.logo {
-    width: 100%;
-    /* display: flex;
-    justify-content: center; */
-    height: 200px;
-}
-
-.logo a {
-    width: 100%;
-    height: 200px;
-    display: block;
-    /* outline: 1px solid tomato; */
-
+    z-index: 10000;
 }
 
 /* LOGO下滑縮小 */
@@ -43,50 +19,35 @@
     top: 10px;
     left: 90%;
     transform: translate(0, 0);
-    /* justify-self: start; */
 }
 
-
-
-
-
-
-
-
-/* 標題 */
-header {}
-
+/* ================header================ */
+/* 預約 */
 header h1 {
     text-align: center;
-    width: 500px;
+    width: 100%;
     font-size: 7rem;
     margin: 0px auto;
     padding-top: 200px;
-    padding-bottom: 50px;
 }
 
+/* 選擇定位時段 */
 h2 {
     text-align: center;
     width: 55%;
     font-size: 32px;
     margin: 0px auto;
-
     font-family: '標楷體';
     font-weight: bold;
 }
 
 
 /* 選單 */
-
-
 .main_ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
 }
-
 
 .main_li {
     list-style: none;
@@ -217,8 +178,6 @@ option {
     font-size: 22px;
     font-weight: normal;
 
-
-
     width: 200px;
     display: block;
     margin: 10px auto;
@@ -229,14 +188,11 @@ option {
 .select input,
 select {
     /* border: 20px solid yellow; */
-    
     cursor: pointer;
     width: 180px;
     padding: 15px;
     font-size: 24px;
 }
-
-
 
 .button {
     margin: 50px auto;
@@ -250,8 +206,300 @@ select {
     background-color: #d6d6d6;
 }
 
-
 .button a {
     text-decoration: none;
     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================414px=================================== */
+
+@media (max-width: 414px) {
+
+    /* ================header================ */
+    /* LOGO */
+    .logo_top {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 30%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.384);
+        height: auto;
+        transform: translate(-50%, 0);
+        transition: all 0.5s ease-in-out;
+        z-index: 10000;
+    }
+
+    /* LOGO下滑縮小 */
+    .shrink {
+        width: 10%;
+        top: 10px;
+        left: 90%;
+        transform: translate(0, 0);
+    }
+
+    /* ================header================ */
+    /* 預約 */
+    header h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 7rem;
+        margin: 0px auto;
+        padding-top: 200px;
+    }
+
+    /* 選擇定位時段 */
+    h2 {
+        text-align: center;
+        width: 55%;
+        font-size: 32px;
+        margin: 0px auto;
+        font-family: '標楷體';
+        font-weight: bold;
+    }
+
+
+    /* 選單 */
+    .main_ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main_li {
+        list-style: none;
+    }
+
+    .inner_ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    span {
+        color: red;
+    }
+
+
+    input,
+    select {
+        background-color: #D4A373;
+        border: 2px solid #D4A373;
+        border-radius: 15px;
+        padding: 0 20px;
+        font-size: 1rem;
+    }
+
+    main {
+        /* border: 5px solid blue; */
+        width: 30%;
+        margin: 0 auto;
+        padding: 100px 0 200px;
+        text-align: center;
+    }
+
+    /* 選單title */
+    label {
+        /* border: 2px dashed green; */
+        /* font-weight: bold; */
+        width: 200px;
+        display: block;
+        margin: 10px auto;
+        text-align: left;
+        font-size: 22px;
+    }
+
+    /* 日期 */
+    input {
+        font-size: 24px;
+    }
+
+    select {
+        font-size: 24px;
+        padding: 3px;
+    }
+
+    option {
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .select {
+        /* border: 5px solid brown; */
+        margin: 50px;
+        /* display: flex; */
+    }
+
+    .f {
+        margin: 0;
+    }
+
+    .select #people_ad,
+    .select #people_chi {
+        /* border: 5px solid sandybrown; */
+        width: 100px;
+        font-size: 2rem;
+    }
+
+    /* .select #people_chi {
+    border: 5px solid sandybrown;
+    width: 90px;
+} */
+
+    .select #time {
+        /* border: 5px solid sandybrown; */
+        width: 200px;
+        padding: 15px;
+    }
+
+    .select #restaurant {
+        width: 200px;
+    }
+
+
+
+
+
+
+    .select li {
+        /* border: 2px solid sandybrown; */
+        width: 300px;
+        margin: 0 auto 50px;
+    }
+
+    .select p {
+        /* border: 5px solid red; */
+        width: 60px;
+        text-align: left;
+        font-size: 22px;
+        font-weight: normal;
+
+        width: 200px;
+        display: block;
+        margin: 10px auto;
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .select input,
+    select {
+        /* border: 20px solid yellow; */
+        cursor: pointer;
+        width: 180px;
+        padding: 15px;
+        font-size: 24px;
+    }
+
+    .button {
+        margin: 50px auto;
+        font-size: 22px;
+        background-color: #D4A373;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #d6d6d6;
+    }
+
+    .button a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

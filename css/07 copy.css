@@ -1,0 +1,84 @@
+/* ================header================ */
+/* LOGO */
+.logo_top {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.384);
+    height: auto;
+    transform: translate(-50%, 0);
+    transition: all 0.5s ease-in-out;
+    z-index: 10000;
+}
+
+/* LOGO下滑縮小 */
+.shrink {
+    width: 10%;
+    top: 10px;
+    left: 90%;
+    transform: translate(0, 0);
+}
+
+/* ================header================ */
+/* 預約 */
+header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 7rem;
+    margin: 0px auto;
+    padding-top: 200px;
+}
+
+/* 選擇定位時段 */
+h2 {
+    text-align: center;
+    width: 55%;
+    font-size: 32px;
+    margin: 0px auto;
+    font-family: '標楷體';
+    font-weight: bold;
+}
+
+/* 選單 */
+span {
+    color: red;
+}
+
+main {
+    border: 5px solid red;
+}
+
+main ul {
+    border: 5px solid green;
+    padding: 6 00px;
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}
+
+p {
+    font-size: 3rem;
+}
+
+/* 三葛li */
+.name_phone,
+.data_time,
+.people_restaurant {
+    display: flex;
+}
+
+
+/* 
+main li {
+    list-style: none;
+}
+
+.inner_ul {
+    display: flex;
+} */
