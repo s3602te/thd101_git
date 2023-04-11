@@ -82,6 +82,36 @@
 </head>
 
 <body>
+    <!-- 414 -->
+    <div class="menu-icon">Menu</div>
+    <div class="side_menu414">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="new.html">最新消息</a></li>
+            <li><a href="menu.html">菜單</a></li>
+            <li><a href="store.html">店鋪資訊</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="connection.html">聯絡我們</a></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        $(function () {
+            let is_open = 0;
+            // 一開始讓選單縮上去
+            // $(".side_menu414").slideUp();
+            // 點擊menu後slidedown
+            $(".menu-icon").click(function () {
+
+                $(".side_menu414 ul").slideToggle();
+                console.log("QQ");
+            })
+        })
+
+    </script>
+
 
 
     <!-- 頂部LOGO -->
@@ -90,7 +120,7 @@
 
     <!-- 包LOGO -->
     <div class="out">
-        
+
 
         <div class="wrapper">
             <!-- 包主內容 -->
@@ -207,22 +237,22 @@
                     <!-- 內容物 -->
                     <div class="container">
                         <ul>
-                            <li>
+                            <li class="pc">
                                 <a href="menu.html"><img src="img/10.jpg" alt="">
                                     <p>蝦爆氣流斬</p>
                                 </a>
                             </li>
-                            <li>
+                            <li class="pc">
                                 <a href="menu.html"><img src="img/11.jpg" alt="">
                                     <p>炎蝦黑龍波</p>
                                 </a>
                             </li>
-                            <li>
+                            <li class="pc">
                                 <a href="menu.html"> <img src="img/12.jpg" alt="">
                                     <p>蝦頭龍閃 </p>
                                 </a>
                             </li>
-                            <li>
+                            <li class="pc">
                                 <a href="menu.html"> <img src="img/13.jpg" alt="">
                                     <p>螺蝦丸</p>
                                 </a>
@@ -230,6 +260,27 @@
 
 
 
+                            <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar"
+                                navigation="true">
+                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="./img/11.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="./img/12.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="./img/13.jpg" alt=""></swiper-slide>
+
+
+                                <!-- <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide> -->
+
+
+
+                            </swiper-container>
+
+
+                            <!-- swiper995 -->
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
                             <!-- test
                             <li>
@@ -258,11 +309,19 @@
 
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+
+
+
+
+
+
 
 
         <!-- 右側 -->
         <div class="side_menu">
-
             <ul>
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="new.html">最新消息</a></li>
@@ -270,6 +329,8 @@
                 <li><a href="store.html">店鋪資訊</a></li>
                 <li><a href="about.html">關於我們</a></li>
                 <li><a href="connection.html">聯絡我們</a></li>
+                <!-- <li><a href="booking.html">立即訂位</a></li> -->
+
             </ul>
         </div>
 
@@ -279,17 +340,22 @@
         <script>
             let side_menu = document.getElementsByClassName("side_menu")
             $(function () {
-                let bottom_side_menu = document.getElementsByClassName("bottom_side_menu")
-                // alert(bottom_side_menu)  //確定抓到
-                document.addEventListener("scroll", () => {
+                console.log(window.innerWidth);
+                if (window.innerWidth <= 414) {
 
-                    // 側邊攔
-                    side_menu[0].style.top = `calc(${pageYOffset}px + 50vh`;
 
-                    // 立即訂位
-                    bottom_side_menu[0].style.top = `calc(${pageYOffset}px + 80vh)`;
+                } else {
+                    let bottom_side_menu = document.getElementsByClassName("bottom_side_menu")
+                    // alert(bottom_side_menu)  //確定抓到
+                    document.addEventListener("scroll", () => {
 
-                });
+                        // 側邊攔
+                        side_menu[0].style.top = `calc(${pageYOffset}px + 50vh`;
+
+                        // 立即訂位
+                        bottom_side_menu[0].style.top = `calc(${pageYOffset}px + 80vh)`;
+                    })
+                }
             });
         </script>
 

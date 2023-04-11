@@ -191,6 +191,14 @@ i {
 }
 
 
+/* 網頁版漢堡不用她 */
+.menu-icon {
+    display: none;
+}
+
+.side_menu414 ul {
+    display: none;
+}
 
 
 
@@ -265,6 +273,64 @@ i {
 
     /* ====================================================== */
     /* 側邊 */
+    /* 414漢堡 */
+    .menu-icon {
+        /* display: block; */
+        background: #eb8d35;
+        padding: 5px;
+        display: flex;
+        color: #fff;
+        font-family: 'Dosis';
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        line-height: 3;
+        z-index: 2000000;
+
+    }
+
+    .side_menu414 {
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: 2000000;
+    }
+
+    .side_menu414>ul {
+        flex-direction: column;
+    }
+
+    .side_menu414>ul>li {
+        display: block;
+        background-color: rgb(238, 188, 96);
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        flex: 1 1 0%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .side_menu {
         z-index: 1000;
         position: absolute;
@@ -272,6 +338,10 @@ i {
         top: 50%;
         right: 0;
         transform: translateY(-50%);
+
+
+
+        display: none;
     }
 
     .side_menu ul {
@@ -320,6 +390,8 @@ i {
         right: 0;
         transform: translateY(-50%);
         margin-right: 50px;
+
+        display: none;
     }
 
     .bottom_side_menu ul {
