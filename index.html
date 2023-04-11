@@ -92,6 +92,7 @@
             <li><a href="store.html">店鋪資訊</a></li>
             <li><a href="about.html">關於我們</a></li>
             <li><a href="connection.html">聯絡我們</a></li>
+            <li><a href="booking.html">立即訂位</a></li>
         </ul>
     </div>
 
@@ -100,9 +101,6 @@
     <script>
         $(function () {
             let is_open = 0;
-            // 一開始讓選單縮上去
-            // $(".side_menu414").slideUp();
-            // 點擊menu後slidedown
             $(".menu-icon").click(function () {
 
                 $(".side_menu414 ul").slideToggle();
@@ -131,7 +129,9 @@
                 <div class="white"></div>
                 <!-- 影片內容 -->
                 <video width="100%" autoplay muted loop="autoplay">
-                    <source src="./img/video/main_media.mp4" type="video/mp4">
+                    <!-- <source src="./img/video/main_media.mp4" type="video/mp4"> -->
+                    <!-- <source src="./img/video/1080_H265.mp4" type="video/mp4"> -->
+                    <source src="./img/video/1080_H265_U.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -163,7 +163,7 @@
 
                     <!-- 蝦圖片 -->
                     <div class="pic_main">
-                        <img src="img/02.jpg" alt="">
+                        <img src="img/compression/02.jpg" alt="">
                     </div>
                 </div>
 
@@ -238,22 +238,22 @@
                     <div class="container">
                         <ul>
                             <li class="pc">
-                                <a href="menu.html"><img src="img/10.jpg" alt="">
+                                <a href="menu.html"><img src="img/compression/10.jpg" alt="">
                                     <p>蝦爆氣流斬</p>
                                 </a>
                             </li>
                             <li class="pc">
-                                <a href="menu.html"><img src="img/11.jpg" alt="">
+                                <a href="menu.html"><img src="img/compression/11.jpg" alt="">
                                     <p>炎蝦黑龍波</p>
                                 </a>
                             </li>
                             <li class="pc">
-                                <a href="menu.html"> <img src="img/12.jpg" alt="">
+                                <a href="menu.html"> <img src="img/compression/12.jpg" alt="">
                                     <p>蝦頭龍閃 </p>
                                 </a>
                             </li>
                             <li class="pc">
-                                <a href="menu.html"> <img src="img/13.jpg" alt="">
+                                <a href="menu.html"> <img src="img/compression/13.jpg" alt="">
                                     <p>螺蝦丸</p>
                                 </a>
                             </li>
@@ -262,17 +262,13 @@
 
                             <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar"
                                 navigation="true">
-                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
-                                <swiper-slide><img src="./img/11.jpg" alt=""></swiper-slide>
-                                <swiper-slide><img src="./img/12.jpg" alt=""></swiper-slide>
-                                <swiper-slide><img src="./img/13.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="img/compression/10.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="img/compression/11.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="img/compression/12.jpg" alt=""></swiper-slide>
+                                <swiper-slide><img src="img/compression/13.jpg" alt=""></swiper-slide>
 
 
-                                <!-- <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
-                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
-                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
-                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide>
-                                <swiper-slide><img src="./img/10.jpg" alt=""></swiper-slide> -->
+
 
 
 
@@ -282,19 +278,23 @@
                             <!-- swiper995 -->
                             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
-                            <!-- test
-                            <li>
-                                <a href="menu.html"><img src="img/10.jpg" alt=""></a>
-                                <p>蝦爆氣流斬</p>
+                            <!-- test -->
+                            <li class="pc">
+                                <a href="menu.html"> <img src="img/compression/12.jpg" alt="">
+                                    <p>蝦頭龍閃 </p>
+                                </a>
                             </li>
-                            <li>
-                                <a href="menu.html"><img src="img/11.jpg" alt=""></a>
-                                <p>炎蝦黑龍波</p>
+                            <li class="pc">
+                                <a href="menu.html"> <img src="img/compression/12.jpg" alt="">
+                                    <p>蝦頭龍閃 </p>
+                                </a>
                             </li>
-                            <li>
-                                <a href="menu.html"> <img src="img/12.jpg" alt=""></a>
-                                <p>蝦頭龍閃 </p>
-                            </li> -->
+                            <li class="pc">
+                                <a href="menu.html"> <img src="img/compression/12.jpg" alt="">
+                                    <p>蝦頭龍閃 </p>
+                                </a>
+                            </li>
+                        
 
                         </ul>
                     </div>
@@ -361,7 +361,8 @@
 
 
         <!-- 右下側 -->
-
+        <!-- 小於< 0.01=影分身 不要影分身0.1
+       if不要搖頭搖尾巴 child(2) 秒數0.01 -->
         <div class="bottom_side_menu">
             <ul>
                 <li><a href="booking.html">立即訂位

@@ -39,6 +39,7 @@
 ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○ 
 
 -->
+
 <head>
     <!-- 字元編碼 UTF-8 -->
     <meta charset="UTF-8">
@@ -72,6 +73,34 @@
 </head>
 
 <body>
+    <!-- 414 -->
+    <div class="menu-icon">Menu</div>
+    <div class="side_menu414">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="new.html">最新消息</a></li>
+            <li><a href="menu.html">菜單</a></li>
+            <li><a href="store.html">店鋪資訊</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="connection.html">聯絡我們</a></li>
+            <li><a href="booking.html">立即訂位</a></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        $(function () {
+            let is_open = 0;
+            $(".menu-icon").click(function () {
+
+                $(".side_menu414 ul").slideToggle();
+                console.log("QQ");
+            })
+        })
+
+    </script>
+
 
     <a href="index.html"><img class="logo_top" id="logo_main" src="img/logo/logo_main.png" alt=""></a>
 
@@ -86,7 +115,7 @@
         <main id="main">
             <ul>
                 <li class="item1">
-                    <img src="./img/07.jpg" alt="">
+                    <img src="img/compression/07.jpg" alt="">
                     <p>
                         每日皆由當地漁民出海 <br>
                         捕撈新鮮的蝦子，<br>
@@ -95,7 +124,7 @@
                 </li>
 
                 <li class="item2">
-                    <img src="./img/08.jpg" alt="">
+                    <img src="img/compression/08.jpg" alt="">
                     <p>
                         精選優質的稻米，<br>
                         每一粒都經過嚴格篩選，<br>
@@ -104,7 +133,7 @@
                 </li>
 
                 <li class="item3">
-                    <img src="./img/09.jpg" alt="">
+                    <img src="img/compression/09.jpg" alt="">
                     <p>
                         初榨橄欖經特殊處理，<br>
                         不含反式脂肪酸，<br>
@@ -114,15 +143,25 @@
             </ul>
         </main>
 
-        <div class="fake_main">
+        <!-- <div class="fake_main">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><img src="./img/07.jpg" alt=""></li>
+                <li><img src="./img/08.jpg" alt=""></li>
+                <li><img src="./img/09.jpg" alt=""></li>
             </ul>
-        </div>
+        </div> -->
 
 
+
+        <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true">
+            <swiper-slide><img src="img/compression/Group 107.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/compression/Group 108.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/compression/Group 109.jpg" alt=""></swiper-slide>
+
+        </swiper-container>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
 
 

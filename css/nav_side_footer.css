@@ -5,7 +5,7 @@ html {
 /* 背景.字體 */
 body {
     font-family: arial, 'Yuji Boku', '微軟正黑', serif;
-    background-image: url("../img/background/bg.jpg");
+    background-image: url("../img/background/bg_c.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -115,7 +115,7 @@ body {
 
 /* 搖 */
 .bottom_side_menu:hover img:nth-child(1) {
-    animation: gogo .001s alternate infinite;
+    animation: gogo .01s alternate infinite;
     /* < 0.01=影分身 不要影分身0.1 */
     /* if不要搖頭搖尾巴 child(2) 秒數0.01 */
     transform-origin: bottom;
@@ -200,8 +200,15 @@ i {
     display: none;
 }
 
+.side_menu414 li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
 
-
+.side_menu414 li a:visited {
+    color: #999;
+}
 
 
 
@@ -251,7 +258,7 @@ i {
     /* 背景.字體 */
     body {
         font-family: arial, 'Yuji Boku', '微軟正黑', serif;
-        background-image: url("../img/background/bg.jpg");
+        background-image: url("../img/background/bg_cc.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         overflow-x: hidden;
@@ -284,11 +291,16 @@ i {
         justify-content: center;
         align-items: center;
         position: fixed;
+        font-size: 1.5rem;
+        line-height: 2;
         top: 0;
         width: 100%;
-        line-height: 3;
         z-index: 2000000;
+    }
 
+
+    .menu-icon img {
+        width: 40px;
     }
 
     .side_menu414 {
@@ -296,6 +308,7 @@ i {
         position: absolute;
         top: 40px;
         left: 0;
+        position: fixed;
         z-index: 2000000;
     }
 
@@ -313,24 +326,7 @@ i {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* pc用在414沒用 */
     .side_menu {
         z-index: 1000;
         position: absolute;
@@ -338,12 +334,8 @@ i {
         top: 50%;
         right: 0;
         transform: translateY(-50%);
-
-
-
         display: none;
     }
-
     .side_menu ul {
         /* outline: 5px solid palevioletred; */
         list-style: none;

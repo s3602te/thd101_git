@@ -39,6 +39,7 @@
 ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○ 
 
 -->
+
 <head>
     <!-- 字元編碼 UTF-8 -->
     <meta charset="UTF-8">
@@ -72,6 +73,34 @@
 </head>
 
 <body>
+    <!-- 414 -->
+    <div class="menu-icon">Menu</div>
+    <div class="side_menu414">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="new.html">最新消息</a></li>
+            <li><a href="menu.html">菜單</a></li>
+            <li><a href="store.html">店鋪資訊</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="connection.html">聯絡我們</a></li>
+            <li><a href="booking.html">立即訂位</a></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        $(function () {
+            let is_open = 0;
+            $(".menu-icon").click(function () {
+
+                $(".side_menu414 ul").slideToggle();
+                console.log("QQ");
+            })
+        })
+
+    </script>
+
 
 
     <a href="index.html"><img class="logo_top" id="logo_main" src="img/logo/logo_main.png" alt=""></a>
@@ -84,7 +113,7 @@
 
 
             <div class="media">
-                <img src="img/01.png" alt="">
+                <img src="img/compression/01.png" alt="">
             </div>
 
         </header>
@@ -101,19 +130,19 @@
 
                 <div class="container">
                     <ul>
-                        <li><a href=""><img src="img/10.jpg" alt="">
+                        <li><a href=""><img src="img/compression/10.jpg" alt="">
                                 <h2>蝦爆氣流斬</h2>
                                 <p>售價:750元</p>
                             </a></li>
-                        <li><a href=""><img src="img/11.jpg" alt="">
+                        <li><a href=""><img src="img/compression/11.jpg" alt="">
                                 <h2>炎蝦黑龍波</h2>
                                 <p>售價:600元</p>
                             </a></li>
-                        <li><a href=""> <img src="img/12.jpg" alt="">
+                        <li><a href=""> <img src="img/compression/12.jpg" alt="">
                                 <h2>蝦頭龍閃</h2>
                                 <p>售價:450元</p>
                             </a></li>
-                        <li><a href=""> <img src="img/13.jpg" alt="">
+                        <li><a href=""> <img src="img/compression/13.jpg" alt="">
                                 <h2>螺蝦丸</h2>
                                 <p>售價:750元</p>
                             </a></li>
@@ -137,28 +166,63 @@
 
 
             <div class="past">
-                <ul>
-                    <li><a href=""><img src="img/10.jpg" alt="">
+                <ul class="pc_past">
+                    <li><a href=""><img src="img/compression/10.jpg" alt="">
                             <h2>蝦爆氣流斬</h2>
-
-                        </a></li>
-                    <li><a href=""><img src="img/11.jpg" alt="">
+                        </a>
+                    </li>
+                    <li><a href=""><img src="img/compression/11.jpg" alt="">
                             <h2>炎蝦黑龍波</h2>
 
-                        </a></li>
-                    <li><a href=""> <img src="img/12.jpg" alt="">
+                        </a>
+                    </li>
+                    <li><a href=""><img src="img/compression/12.jpg" alt="">
                             <h2>蝦頭龍閃</h2>
 
-                        </a></li>
-                    <li><a href=""> <img src="img/13.jpg" alt="">
+                        </a>
+                    </li>
+                    <li><a href=""><img src="img/compression/13.jpg" alt="">
                             <h2>螺蝦丸</h2>
 
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
+
+
+
+                <swiper-container class="mySwiper" navigation="true">
+                    <swiper-slide><img src="img/compression/10.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/compression/11.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/compression/12.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="img/compression/13.jpg" alt=""></swiper-slide>
+
+                </swiper-container>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
             </div>
         </main>
 
+
+
+
+
+
+
+
+
+
     </div>
+
+
 
 
 

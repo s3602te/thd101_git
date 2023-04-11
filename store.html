@@ -46,6 +46,7 @@
 ○○○○○••••••○○○○○○••••○○○○○
 
  -->
+
 <head>
     <!-- 字元編碼 UTF-8 -->
     <meta charset="UTF-8">
@@ -80,6 +81,34 @@
 </head>
 
 <body>
+    <!-- 414 -->
+    <div class="menu-icon">Menu</div>
+    <div class="side_menu414">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="new.html">最新消息</a></li>
+            <li><a href="menu.html">菜單</a></li>
+            <li><a href="store.html">店鋪資訊</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="connection.html">聯絡我們</a></li>
+            <li><a href="booking.html">立即訂位</a></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        $(function () {
+            let is_open = 0;
+            $(".menu-icon").click(function () {
+
+                $(".side_menu414 ul").slideToggle();
+                console.log("QQ");
+            })
+        })
+
+    </script>
+
 
     <a href="index.html"><img class="logo_top" id="logo_main" src="img/logo/logo_main.png" alt=""></a>
 
@@ -123,7 +152,7 @@
                                     <span>位置資訊</span>
                                 </p>
                             </div>
-                            <a href=""><img src="img/store01.jpg" alt=""></a>
+                            <a href=""><img src="img/compression/store01.jpg" alt=""></a>
                         </li>
 
 
@@ -141,7 +170,7 @@
                                     <span>位置資訊</span>
                                 </p>
                             </div>
-                            <a href=""><img src="img/store02.jpg" alt=""></a>
+                            <a href=""><img src="img/compression/store02.jpg" alt=""></a>
                         </li>
 
 
@@ -159,7 +188,7 @@
                                     <span>位置資訊</span>
                                 </p>
                             </div>
-                            <a href=""><img src="img/store03.jpg" alt=""></a>
+                            <a href=""><img src="img/compression/store03.jpg" alt=""></a>
                         </li>
 
 
@@ -177,7 +206,7 @@
                                     <span>位置資訊</span>
                                 </p>
                             </div>
-                            <a href=""><img src="img/store04.jpg" alt=""></a>
+                            <a href=""><img src="img/compression/store04.jpg" alt=""></a>
                         </li>
 
 

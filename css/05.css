@@ -67,7 +67,7 @@ main li {
 
 /* 三圖-1 */
 .item1 {
-  background-image: url("../img/07.jpg");
+  background-image: url("../img/compression/07.jpg");
   flex-grow: 1;
   filter: saturate(0.4);
   width: 100%;
@@ -75,7 +75,7 @@ main li {
 
 /* 三圖-2 */
 main .item2 {
-  background-image: url("../img/08.jpg");
+  background-image: url("../img/compression/08.jpg");
   flex-grow: 1;
   filter: saturate(0.4);
   width: 100%;
@@ -91,7 +91,7 @@ main .item2 p {
 
 /* 三圖-3 */
 .item3 {
-  background-image: url("../img/09.jpg");
+  background-image: url("../img/compression/09.jpg");
   flex-grow: 1;
   filter: saturate(0.4);
   width: 100%;
@@ -102,7 +102,7 @@ li:hover {
   filter: saturate(1);
 }
 
-#main img{
+#main img {
   display: none;
 }
 
@@ -134,7 +134,9 @@ li:hover {
 
 
 
-
+swiper-container {
+  display: none;
+}
 
 
 
@@ -176,13 +178,15 @@ li:hover {
 @media (max-width: 414px) {
 
   /* ================header================ */
+
   /* LOGO */
   .logo_top {
+
     position: fixed;
     top: 0;
     left: 50%;
-    width: 30%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 40px auto;
     background-color: rgba(255, 255, 255, 0.384);
     height: auto;
     transform: translate(-50%, 0);
@@ -205,24 +209,76 @@ li:hover {
     width: 100%;
     font-size: 3rem;
     margin: 0px auto;
-    padding-top: 100px;
+    padding-top: 200px;
   }
 
   /* ======================================== */
   /* 三圖白字 */
-  #main{
+  #main {
     display: none;
   }
 
 
-  #main ul{
 
+
+
+
+
+  swiper-container {
+    margin-top: 50px;
+    width: 80vw;
+    height: 50vh;
+    display: block;
   }
 
-#main li{
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-}
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .fake_main {}
+
+  .fake_main ul {}
+
+  .fake_main_li {}
+
+  .mySwiper img {
+    /* width: 0%; */
+  }
 
 
 
@@ -280,13 +336,13 @@ li:hover {
 
   /* 三圖-1 */
   .item1 {
-    background-image: url("../img/07.jpg");
+    background-image: url("../img/compression/07.jpg");
     width: 100%;
   }
 
   /* 三圖-2 */
   main .item2 {
-    background-image: url("../img/08.jpg");
+    background-image: url("../img/compression/08.jpg");
     width: 100%;
   }
 
@@ -300,7 +356,7 @@ li:hover {
 
   /* 三圖-3 */
   .item3 {
-    background-image: url("../img/09.jpg");
+    background-image: url("../img/compression/09.jpg");
     width: 100%;
   }
 

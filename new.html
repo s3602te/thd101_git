@@ -39,6 +39,7 @@
 ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○ 
 
 -->
+
 <head>
     <!-- 字元編碼 UTF-8 -->
     <meta charset="UTF-8">
@@ -72,6 +73,35 @@
 </head>
 
 <body>
+    <!-- 414 -->
+    <div class="menu-icon">Menu</div>
+    <div class="side_menu414">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="new.html">最新消息</a></li>
+            <li><a href="menu.html">菜單</a></li>
+            <li><a href="store.html">店鋪資訊</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="connection.html">聯絡我們</a></li>
+            <li><a href="booking.html">立即訂位</a></li>
+            
+        </ul>
+    </div>
+
+
+
+    <script>
+        $(function () {
+            let is_open = 0;
+            $(".menu-icon").click(function () {
+
+                $(".side_menu414 ul").slideToggle();
+                console.log("QQ");
+            })
+        })
+
+    </script>
+
 
     <a href="index.html"><img class="logo_top" id="logo_main" src="img/logo/logo_main.png" alt=""></a>
 
@@ -87,7 +117,7 @@
 
         <div class="container">
             <ul>
-                <li><a href=""><img src="img/15.jpg" alt="">
+                <li><a href=""><img src="img/compression/15.jpg" alt="">
                         <h2>重要通知：雞蛋供應不穩，相關餐點停止供應</h2>
                         <p>由於最近的雞蛋供應鏈問題，我們很遺憾地通知您，有關雞蛋相關餐點已部分停止供應。在此期間，我們深感抱歉，並希望您能......
                             <span>more</span>
@@ -95,7 +125,7 @@
                     </a>
                 </li>
 
-                <li><a href=""><img src="img/16.jpg" alt="">
+                <li><a href=""><img src="img/compression/16.jpg" alt="">
                         <h2>夏日限定！涼麵炸蝦上市</h2>
                         <p>夏日限定美食，日式涼麵炸蝦。這道獨特組合的料理包含了傳統的日式涼麵和新鮮的炸蝦，混合出令人驚艷的口感。在炎熱的夏......
                             <span>more</span>
@@ -103,7 +133,7 @@
                     </a>
                 </li>
 
-                <li><a href=""><img src="img/17.jpg" alt="">
+                <li><a href=""><img src="img/compression/17.jpg" alt="">
                         <h2>感謝各位顧客！我們即將慶祝五周年店慶</h2>
                         <p>我們很榮幸地宣布，將在下個月舉行五周年店慶活動，感謝各位忠實的顧客一直以來的支持。我們將推出一些限定套餐和禮品......
                             <span>more</span>
@@ -111,7 +141,7 @@
                     </a>
                 </li>
 
-                <li><a href=""><img src="img/18.jpg" alt="">
+                <li><a href=""><img src="img/compression/18.jpg" alt="">
                         <h2>即將推出全新菜單！</h2>
                         <p>我們非常高興地宣布，將在未來幾週內推出全新菜單！新的菜單將包含一些新穎和獨特的炸蝦和海鮮美食，以及您最喜愛的經典......
                             <span>more</span>
@@ -119,29 +149,27 @@
                     </a>
                 </li>
 
-                <!-- <li><a href=""><img src="img/18.jpg" alt="">
+                <li><a href=""><img src="img/compression/18.jpg" alt="">
                         <h2>即將推出全新菜單！</h2>
                         <p>我們非常高興地宣布，將在未來幾週內推出全新菜單！新的菜單將包含一些新穎和獨特的炸蝦和海鮮美食，以及您最喜愛的經典......
                             <span>more</span>
                         </p>
                     </a>
                 </li>
-
-                <li><a href=""><img src="img/18.jpg" alt="">
+                <li><a href=""><img src="img/compression/18.jpg" alt="">
                         <h2>即將推出全新菜單！</h2>
                         <p>我們非常高興地宣布，將在未來幾週內推出全新菜單！新的菜單將包含一些新穎和獨特的炸蝦和海鮮美食，以及您最喜愛的經典......
                             <span>more</span>
                         </p>
                     </a>
                 </li>
-
-                <li><a href=""><img src="img/18.jpg" alt="">
+                <li><a href=""><img src="img/compression/18.jpg" alt="">
                         <h2>即將推出全新菜單！</h2>
                         <p>我們非常高興地宣布，將在未來幾週內推出全新菜單！新的菜單將包含一些新穎和獨特的炸蝦和海鮮美食，以及您最喜愛的經典......
                             <span>more</span>
                         </p>
                     </a>
-                </li> -->
+                </li>
             </ul>
         </div>
 

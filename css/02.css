@@ -205,27 +205,29 @@ button:hover {
 @media (max-width: 414px) {
 
 
-  /* ================header================ */
-  /* LOGO */
-  .logo_top {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    width: 30%;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.384);
-    height: auto;
-    transform: translate(-50%, 0);
-    transition: all 0.5s ease-in-out;
-    z-index: 10000;
+/* ================header================ */
+
+    /* LOGO */
+    .logo_top {
+
+      position: fixed;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.384);
+      height: auto;
+      transform: translate(-50%, 0);
+      transition: all 0.5s ease-in-out;
+      z-index: 10000;
   }
 
   /* LOGO下滑縮小 */
   .shrink {
-    width: 50%;
-    top: 10px;
-    left: 50%;
-    transform: translate(0, 0);
+      width: 50%;
+      top: 10px;
+      left: 50%;
+      transform: translate(0, 0);
   }
 
   /* ================header================ */
@@ -235,7 +237,7 @@ button:hover {
     width: 100%;
     font-size: 3rem;
     margin: 0px auto;
-    padding-top: 100px;
+    padding-top: 200px;
   }
 
   /* 內容 */
