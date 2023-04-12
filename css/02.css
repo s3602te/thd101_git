@@ -81,7 +81,7 @@ h2 {
 .container p {
   font-family: '微軟正黑體';
   /* outline: 5px solid pink; */
-  text-align: center;
+  text-align: start;
   font-size: 1.5rem;
   margin-top: 10px;
   font-weight: bold;
