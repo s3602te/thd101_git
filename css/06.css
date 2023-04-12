@@ -178,6 +178,7 @@ option {
     width: 250px;
     background-color: #D4A373;
     border-radius: 20px;
+    resize: none;
 }
 
 /* 詳閱 */
@@ -383,7 +384,7 @@ li .agree {
         font-size: 2rem;
         border-radius: 50px;
         padding: 10 20px;
-        
+
 
     }
 
@@ -400,6 +401,7 @@ li .agree {
         width: 90%;
         background-color: #D4A373;
         border-radius: 20px;
+        resize: none;
     }
 
     /* 詳閱 */
