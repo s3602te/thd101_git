@@ -81,6 +81,7 @@ h2 {
     color: black;
     margin: 0 auto;
     width: 100%;
+    margin-top: 8px;
 }
 
 /* 不用沒差 */
@@ -101,7 +102,7 @@ h2 {
     display: block;
     margin: 0 auto;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .container img {
