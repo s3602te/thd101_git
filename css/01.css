@@ -64,6 +64,7 @@ main {}
 /* 料理.幸福 */
 main .title {
     margin-bottom: 100px;
+    display: flex;
 }
 
 /* 字首放大 */
@@ -72,10 +73,11 @@ main .title p::first-letter {
 }
 
 main .title p {
-    width: calc(100% - 50%);
+    
+    /* width: calc(100% - 50%); */
     display: block;
     font-size: 3rem;
-    line-height: 3;
+    line-height: 100px;
     margin: 150px auto 300px;
     text-shadow: 3px 3px 1px rgba(250, 176, 2, 0.79);
 }
